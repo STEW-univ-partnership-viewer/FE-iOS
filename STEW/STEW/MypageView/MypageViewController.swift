@@ -35,6 +35,7 @@ extension MypageViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = mypageTableView.dequeueReusableCell(withIdentifier: "MypageTableViewCell", for: indexPath) as? MypageTableViewCell else { return UITableViewCell() }
         cell.mypageTitleLabel.text = configList[indexPath.row]
+        cell.selectionStyle = .none
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
