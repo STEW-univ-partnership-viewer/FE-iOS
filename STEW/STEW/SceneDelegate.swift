@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
          
-        let mainViewController = ViewController() // 이 뷰컨트롤러를 내비게이션 컨트롤러에 담기
+        let mainViewController = MainViewController() // 이 뷰컨트롤러를 내비게이션 컨트롤러에 담기
         let navigationController = UINavigationController(rootViewController: mainViewController) // 내비게이션 컨트롤러에 처음으로 보여질 화면을 rootView로 지정
                 
         window?.rootViewController = navigationController // 시작을 위에서 만든 내비게이션 컨트롤러 설정

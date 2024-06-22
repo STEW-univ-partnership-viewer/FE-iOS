@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MypageViewController" customModule="STEW" customModuleProvider="target">
+            <connections>
+                <outlet property="mypageTableView" destination="fBf-Ue-fDY" id="z2i-mH-xeF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이페이지" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ2-pY-Jjh">
+                    <rect key="frame" x="15" y="59" width="104" height="29"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJP-U0-uhw">
+                    <rect key="frame" x="0.0" y="98" width="393" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ehP-8Y-nxc"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fBf-Ue-fDY">
+                    <rect key="frame" x="0.0" y="99" width="393" height="719"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NJ2-pY-Jjh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1Ko-TQ-ua4"/>
+                <constraint firstItem="gJP-U0-uhw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P5c-Ik-UrJ"/>
+                <constraint firstItem="fBf-Ue-fDY" firstAttribute="top" secondItem="gJP-U0-uhw" secondAttribute="bottom" id="To9-7x-iSA"/>
+                <constraint firstItem="gJP-U0-uhw" firstAttribute="top" secondItem="NJ2-pY-Jjh" secondAttribute="bottom" constant="10" id="WCO-L5-SWk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fBf-Ue-fDY" secondAttribute="bottom" id="Ye1-YC-OTJ"/>
+                <constraint firstItem="fBf-Ue-fDY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cf4-vj-p8s"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gJP-U0-uhw" secondAttribute="trailing" id="esW-NV-4a6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fBf-Ue-fDY" secondAttribute="trailing" id="gxF-pW-yJf"/>
+                <constraint firstItem="NJ2-pY-Jjh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="lw8-dm-Cc9"/>
+            </constraints>
+            <point key="canvasLocation" x="113.74045801526717" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
