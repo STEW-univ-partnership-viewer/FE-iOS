@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let APIKey = Bundle.main.infoDictionary?["APIKey"] as! String
 
     override func viewDidLoad() {
         super.viewDidLoad()
