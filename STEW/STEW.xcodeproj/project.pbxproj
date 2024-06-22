@@ -15,6 +15,7 @@
 		09EC34B52C26B3C500020FF8 /* STEWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34B42C26B3C500020FF8 /* STEWTests.swift */; };
 		09EC34BF2C26B3C500020FF8 /* STEWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34BE2C26B3C500020FF8 /* STEWUITests.swift */; };
 		09EC34C12C26B3C500020FF8 /* STEWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34C02C26B3C500020FF8 /* STEWUITestsLaunchTests.swift */; };
+		09EC34CF2C26B98400020FF8 /* KakaoMapsSDK-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 09EC34CE2C26B98400020FF8 /* KakaoMapsSDK-SPM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09EC34CF2C26B98400020FF8 /* KakaoMapsSDK-SPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +142,9 @@
 			dependencies = (
 			);
 			name = STEW;
+			packageProductDependencies = (
+				09EC34CE2C26B98400020FF8 /* KakaoMapsSDK-SPM */,
+			);
 			productName = STEW;
 			productReference = 09EC349A2C26B3C400020FF8 /* STEW.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +217,9 @@
 				Base,
 			);
 			mainGroup = 09EC34912C26B3C400020FF8;
+			packageReferences = (
+				09EC34CD2C26B98400020FF8 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */,
+			);
 			productRefGroup = 09EC349B2C26B3C400020FF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -593,6 +601,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09EC34CD2C26B98400020FF8 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09EC34CE2C26B98400020FF8 /* KakaoMapsSDK-SPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09EC34CD2C26B98400020FF8 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */;
+			productName = "KakaoMapsSDK-SPM";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09EC34922C26B3C400020FF8 /* Project object */;
 }
