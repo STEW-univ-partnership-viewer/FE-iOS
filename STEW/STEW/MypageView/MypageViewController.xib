@@ -19,6 +19,16 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fBf-Ue-fDY">
+                    <rect key="frame" x="0.0" y="99" width="393" height="719"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEW v1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXN-DN-Iqo">
+                    <rect key="frame" x="151.66666666666666" y="428" width="90" height="21"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이페이지" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ2-pY-Jjh">
                     <rect key="frame" x="15" y="59" width="104" height="29"/>
                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="24"/>
@@ -32,15 +42,12 @@
                         <constraint firstAttribute="height" constant="1" id="ehP-8Y-nxc"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fBf-Ue-fDY">
-                    <rect key="frame" x="0.0" y="99" width="393" height="719"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="NJ2-pY-Jjh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1Ko-TQ-ua4"/>
+                <constraint firstItem="KXN-DN-Iqo" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="2Jk-Oz-AxB"/>
                 <constraint firstItem="gJP-U0-uhw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P5c-Ik-UrJ"/>
                 <constraint firstItem="fBf-Ue-fDY" firstAttribute="top" secondItem="gJP-U0-uhw" secondAttribute="bottom" id="To9-7x-iSA"/>
                 <constraint firstItem="gJP-U0-uhw" firstAttribute="top" secondItem="NJ2-pY-Jjh" secondAttribute="bottom" constant="10" id="WCO-L5-SWk"/>
@@ -49,6 +56,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gJP-U0-uhw" secondAttribute="trailing" id="esW-NV-4a6"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fBf-Ue-fDY" secondAttribute="trailing" id="gxF-pW-yJf"/>
                 <constraint firstItem="NJ2-pY-Jjh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="lw8-dm-Cc9"/>
+                <constraint firstItem="KXN-DN-Iqo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nwO-FD-QvV"/>
             </constraints>
             <point key="canvasLocation" x="113.74045801526717" y="-12.67605633802817"/>
         </view>
@@ -56,6 +64,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
