@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController" customModule="STEW" customModuleProvider="target">
+            <connections>
+                <outlet property="darkmodeSwitch" destination="i3p-2F-NOL" id="Xpr-3b-BNn"/>
+                <outlet property="nofiticationSwitch" destination="rlz-vS-uXI" id="VVX-Ip-KsG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeX-D5-5WT">
+                    <rect key="frame" x="0.0" y="59" width="393" height="60"/>
+                    <subviews>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i3p-2F-NOL">
+                            <rect key="frame" x="324" y="14.666666666666671" width="51" height="31"/>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다크모드(추후 개발 예정)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9Y-iw-zIf">
+                            <rect key="frame" x="20" y="19.666666666666671" width="167" height="21"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="V9Y-iw-zIf" firstAttribute="leading" secondItem="GeX-D5-5WT" secondAttribute="leading" constant="20" id="R4H-J2-U4J"/>
+                        <constraint firstAttribute="height" constant="60" id="TCQ-9F-2wF"/>
+                        <constraint firstItem="i3p-2F-NOL" firstAttribute="centerY" secondItem="GeX-D5-5WT" secondAttribute="centerY" id="fpR-OS-6xD"/>
+                        <constraint firstItem="V9Y-iw-zIf" firstAttribute="centerY" secondItem="GeX-D5-5WT" secondAttribute="centerY" id="hMf-dV-k6d"/>
+                        <constraint firstAttribute="trailing" secondItem="i3p-2F-NOL" secondAttribute="trailing" constant="20" id="jKp-cZ-Tp1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iyf-y6-g4w">
+                    <rect key="frame" x="0.0" y="119" width="393" height="60"/>
+                    <subviews>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rlz-vS-uXI">
+                            <rect key="frame" x="324" y="14.666666666666657" width="51" height="31"/>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알림" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWo-zW-11P">
+                            <rect key="frame" x="20" y="19.666666666666657" width="29.666666666666671" height="20.666666666666671"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ZWo-zW-11P" firstAttribute="leading" secondItem="Iyf-y6-g4w" secondAttribute="leading" constant="20" id="2SX-Pv-225"/>
+                        <constraint firstAttribute="height" constant="60" id="Vp7-kj-9ZR"/>
+                        <constraint firstItem="ZWo-zW-11P" firstAttribute="centerY" secondItem="Iyf-y6-g4w" secondAttribute="centerY" id="buA-2I-XUj"/>
+                        <constraint firstAttribute="trailing" secondItem="rlz-vS-uXI" secondAttribute="trailing" constant="20" id="otv-Qe-fda"/>
+                        <constraint firstItem="rlz-vS-uXI" firstAttribute="centerY" secondItem="Iyf-y6-g4w" secondAttribute="centerY" id="vnn-5V-O4c"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Iyf-y6-g4w" firstAttribute="top" secondItem="GeX-D5-5WT" secondAttribute="bottom" id="1qX-Be-cbT"/>
+                <constraint firstItem="GeX-D5-5WT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8Yz-qJ-GRR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GeX-D5-5WT" secondAttribute="trailing" id="QPl-mt-l31"/>
+                <constraint firstItem="Iyf-y6-g4w" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="YKt-qS-Gvd"/>
+                <constraint firstItem="Iyf-y6-g4w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ut3-af-ReD"/>
+                <constraint firstItem="GeX-D5-5WT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wyy-dE-8lm"/>
+            </constraints>
+            <point key="canvasLocation" x="113.74045801526717" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
