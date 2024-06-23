@@ -40,6 +40,20 @@ extension MypageViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // TODO: 추가 UI 구현하여 연결하기
+        switch indexPath.row{
+            case 0:
+                showSettingVC();
+                break
+            case 1:
+                showDevInfoVC();
+                break
+            case 2:
+                showInquiryVC();
+                break
+            default:
+                break
+        }
+        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
@@ -47,3 +61,24 @@ extension MypageViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
+extension MypageViewController{
+    func showSettingVC() {
+        let vc = SettingViewController()
+        if let sheet = vc.sheetPresentationController {
+                sheet.detents = [.medium()]
+        }
+        self.present(vc, animated: true)
+    }
+    func showDevInfoVC() {
+        let vc = DeveloperInformationViewController()
+        if let sheet = vc.sheetPresentationController {
+                sheet.detents = [.medium()]
+        }
+        self.present(vc, animated: true)
+    }
+    func showInquiryVC() {
+        let vc = InquiryViewController()
+        self.present(vc, animated: true)
+    }
+    
+}

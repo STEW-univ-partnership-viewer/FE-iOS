@@ -13,6 +13,12 @@
 		093CCF4D2C26D6C900B8E627 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093CCF4B2C26D6C900B8E627 /* ListViewController.xib */; };
 		093CCF512C26D6E900B8E627 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093CCF4F2C26D6E900B8E627 /* MypageViewController.swift */; };
 		093CCF522C26D6E900B8E627 /* MypageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093CCF502C26D6E900B8E627 /* MypageViewController.xib */; };
+		09A2E8022C2806AC008F96E8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E8002C2806AC008F96E8 /* SettingViewController.swift */; };
+		09A2E8032C2806AC008F96E8 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A2E8012C2806AC008F96E8 /* SettingViewController.xib */; };
+		09A2E8072C2807AE008F96E8 /* DeveloperInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */; };
+		09A2E8082C2807AE008F96E8 /* DeveloperInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A2E8062C2807AE008F96E8 /* DeveloperInformationViewController.xib */; };
+		09A2E80C2C2807C8008F96E8 /* InquiryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E80A2C2807C8008F96E8 /* InquiryViewController.swift */; };
+		09A2E80D2C2807C8008F96E8 /* InquiryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A2E80B2C2807C8008F96E8 /* InquiryViewController.xib */; };
 		09BA7CB32C270951004F470E /* MypageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BA7CB12C270951004F470E /* MypageTableViewCell.swift */; };
 		09BA7CB42C270951004F470E /* MypageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BA7CB22C270951004F470E /* MypageTableViewCell.xib */; };
 		09EC349E2C26B3C400020FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC349D2C26B3C400020FF8 /* AppDelegate.swift */; };
@@ -50,6 +56,12 @@
 		093CCF4B2C26D6C900B8E627 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		093CCF4F2C26D6E900B8E627 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		093CCF502C26D6E900B8E627 /* MypageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MypageViewController.xib; sourceTree = "<group>"; };
+		09A2E8002C2806AC008F96E8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		09A2E8012C2806AC008F96E8 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInformationViewController.swift; sourceTree = "<group>"; };
+		09A2E8062C2807AE008F96E8 /* DeveloperInformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeveloperInformationViewController.xib; sourceTree = "<group>"; };
+		09A2E80A2C2807C8008F96E8 /* InquiryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryViewController.swift; sourceTree = "<group>"; };
+		09A2E80B2C2807C8008F96E8 /* InquiryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InquiryViewController.xib; sourceTree = "<group>"; };
 		09BA7CB12C270951004F470E /* MypageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageTableViewCell.swift; sourceTree = "<group>"; };
 		09BA7CB22C270951004F470E /* MypageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MypageTableViewCell.xib; sourceTree = "<group>"; };
 		09EC349A2C26B3C400020FF8 /* STEW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STEW.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,9 +128,39 @@
 			children = (
 				093CCF4F2C26D6E900B8E627 /* MypageViewController.swift */,
 				093CCF502C26D6E900B8E627 /* MypageViewController.xib */,
+				09A2E80E2C2807CB008F96E8 /* InquiryView */,
+				09A2E8092C2807B2008F96E8 /* DevInfoView */,
+				09A2E8042C28078E008F96E8 /* SettingView */,
 				09BA7CB52C270957004F470E /* MypageTableView */,
 			);
 			path = MypageView;
+			sourceTree = "<group>";
+		};
+		09A2E8042C28078E008F96E8 /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				09A2E8002C2806AC008F96E8 /* SettingViewController.swift */,
+				09A2E8012C2806AC008F96E8 /* SettingViewController.xib */,
+			);
+			path = SettingView;
+			sourceTree = "<group>";
+		};
+		09A2E8092C2807B2008F96E8 /* DevInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */,
+				09A2E8062C2807AE008F96E8 /* DeveloperInformationViewController.xib */,
+			);
+			path = DevInfoView;
+			sourceTree = "<group>";
+		};
+		09A2E80E2C2807CB008F96E8 /* InquiryView */ = {
+			isa = PBXGroup;
+			children = (
+				09A2E80A2C2807C8008F96E8 /* InquiryViewController.swift */,
+				09A2E80B2C2807C8008F96E8 /* InquiryViewController.xib */,
+			);
+			path = InquiryView;
 			sourceTree = "<group>";
 		};
 		09BA7CB52C270957004F470E /* MypageTableView */ = {
@@ -294,7 +336,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A2E8032C2806AC008F96E8 /* SettingViewController.xib in Resources */,
 				09BA7CB42C270951004F470E /* MypageTableViewCell.xib in Resources */,
+				09A2E80D2C2807C8008F96E8 /* InquiryViewController.xib in Resources */,
+				09A2E8082C2807AE008F96E8 /* DeveloperInformationViewController.xib in Resources */,
 				09EC34AA2C26B3C500020FF8 /* LaunchScreen.storyboard in Resources */,
 				093CCF482C26D69600B8E627 /* MapViewController.xib in Resources */,
 				093CCF4D2C26D6C900B8E627 /* ListViewController.xib in Resources */,
@@ -326,9 +371,12 @@
 			files = (
 				09EC34A22C26B3C400020FF8 /* MainViewController.swift in Sources */,
 				09EC349E2C26B3C400020FF8 /* AppDelegate.swift in Sources */,
+				09A2E80C2C2807C8008F96E8 /* InquiryViewController.swift in Sources */,
 				09EC34A02C26B3C400020FF8 /* SceneDelegate.swift in Sources */,
+				09A2E8022C2806AC008F96E8 /* SettingViewController.swift in Sources */,
 				09BA7CB32C270951004F470E /* MypageTableViewCell.swift in Sources */,
 				093CCF512C26D6E900B8E627 /* MypageViewController.swift in Sources */,
+				09A2E8072C2807AE008F96E8 /* DeveloperInformationViewController.swift in Sources */,
 				093CCF4C2C26D6C900B8E627 /* ListViewController.swift in Sources */,
 				093CCF472C26D69600B8E627 /* MapViewController.swift in Sources */,
 			);
