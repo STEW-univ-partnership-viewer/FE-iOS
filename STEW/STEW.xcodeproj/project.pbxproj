@@ -29,7 +29,9 @@
 		09EC34B52C26B3C500020FF8 /* STEWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34B42C26B3C500020FF8 /* STEWTests.swift */; };
 		09EC34BF2C26B3C500020FF8 /* STEWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34BE2C26B3C500020FF8 /* STEWUITests.swift */; };
 		09EC34C12C26B3C500020FF8 /* STEWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34C02C26B3C500020FF8 /* STEWUITestsLaunchTests.swift */; };
-		09EC34CF2C26B98400020FF8 /* KakaoMapsSDK-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 09EC34CE2C26B98400020FF8 /* KakaoMapsSDK-SPM */; };
+		33A53BB3AEE6F487E3A373CF /* Pods_STEW_STEWUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71205B7991665BD2B0514329 /* Pods_STEW_STEWUITests.framework */; };
+		C027F403BDCD768DBAA40496 /* Pods_STEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A790BBB1C4C46763A9EC7013 /* Pods_STEW.framework */; };
+		F14215B8EFD8702946F01D7F /* Pods_STEWTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BBB05057C4E03D5B4AD1B1 /* Pods_STEWTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,15 @@
 		09EC34BE2C26B3C500020FF8 /* STEWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEWUITests.swift; sourceTree = "<group>"; };
 		09EC34C02C26B3C500020FF8 /* STEWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEWUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		09EC34D22C26C4EE00020FF8 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		6B6554D294A4AD51FBDE3285 /* Pods-STEW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEW.debug.xcconfig"; path = "Target Support Files/Pods-STEW/Pods-STEW.debug.xcconfig"; sourceTree = "<group>"; };
+		6D82E019DD5593FF3DAC996D /* Pods-STEW-STEWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEW-STEWUITests.debug.xcconfig"; path = "Target Support Files/Pods-STEW-STEWUITests/Pods-STEW-STEWUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		71205B7991665BD2B0514329 /* Pods_STEW_STEWUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEW_STEWUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74711501E87CC00609D2462C /* Pods-STEW-STEWUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEW-STEWUITests.release.xcconfig"; path = "Target Support Files/Pods-STEW-STEWUITests/Pods-STEW-STEWUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A790BBB1C4C46763A9EC7013 /* Pods_STEW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1603FB758B1DC19ABF0008C /* Pods-STEWTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEWTests.debug.xcconfig"; path = "Target Support Files/Pods-STEWTests/Pods-STEWTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA8A84E506B4E6716D1DCC68 /* Pods-STEWTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEWTests.release.xcconfig"; path = "Target Support Files/Pods-STEWTests/Pods-STEWTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0267436B25FEFA4ECC86FE2 /* Pods-STEW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEW.release.xcconfig"; path = "Target Support Files/Pods-STEW/Pods-STEW.release.xcconfig"; sourceTree = "<group>"; };
+		E3BBB05057C4E03D5B4AD1B1 /* Pods_STEWTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEWTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09EC34CF2C26B98400020FF8 /* KakaoMapsSDK-SPM in Frameworks */,
+				C027F403BDCD768DBAA40496 /* Pods_STEW.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14215B8EFD8702946F01D7F /* Pods_STEWTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A53BB3AEE6F487E3A373CF /* Pods_STEW_STEWUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +192,8 @@
 				09EC34B32C26B3C500020FF8 /* STEWTests */,
 				09EC34BD2C26B3C500020FF8 /* STEWUITests */,
 				09EC349B2C26B3C400020FF8 /* Products */,
+				BB6CD07DA55AE58C8F80376A /* Pods */,
+				14B6F9ABB24D8A5AE1B6EA0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +241,29 @@
 			path = STEWUITests;
 			sourceTree = "<group>";
 		};
+		14B6F9ABB24D8A5AE1B6EA0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A790BBB1C4C46763A9EC7013 /* Pods_STEW.framework */,
+				71205B7991665BD2B0514329 /* Pods_STEW_STEWUITests.framework */,
+				E3BBB05057C4E03D5B4AD1B1 /* Pods_STEWTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB6CD07DA55AE58C8F80376A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B6554D294A4AD51FBDE3285 /* Pods-STEW.debug.xcconfig */,
+				E0267436B25FEFA4ECC86FE2 /* Pods-STEW.release.xcconfig */,
+				6D82E019DD5593FF3DAC996D /* Pods-STEW-STEWUITests.debug.xcconfig */,
+				74711501E87CC00609D2462C /* Pods-STEW-STEWUITests.release.xcconfig */,
+				C1603FB758B1DC19ABF0008C /* Pods-STEWTests.debug.xcconfig */,
+				CA8A84E506B4E6716D1DCC68 /* Pods-STEWTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,18 +271,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09EC34C42C26B3C500020FF8 /* Build configuration list for PBXNativeTarget "STEW" */;
 			buildPhases = (
+				74F25131C074BA553BF1BDCB /* [CP] Check Pods Manifest.lock */,
 				09EC34962C26B3C400020FF8 /* Sources */,
 				09EC34972C26B3C400020FF8 /* Frameworks */,
 				09EC34982C26B3C400020FF8 /* Resources */,
+				90DB2187C2B85F14507462E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = STEW;
-			packageProductDependencies = (
-				09EC34CE2C26B98400020FF8 /* KakaoMapsSDK-SPM */,
-			);
 			productName = STEW;
 			productReference = 09EC349A2C26B3C400020FF8 /* STEW.app */;
 			productType = "com.apple.product-type.application";
@@ -253,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09EC34C72C26B3C500020FF8 /* Build configuration list for PBXNativeTarget "STEWTests" */;
 			buildPhases = (
+				9CEFC48569CBF7553187CF83 /* [CP] Check Pods Manifest.lock */,
 				09EC34AC2C26B3C500020FF8 /* Sources */,
 				09EC34AD2C26B3C500020FF8 /* Frameworks */,
 				09EC34AE2C26B3C500020FF8 /* Resources */,
@@ -271,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09EC34CA2C26B3C500020FF8 /* Build configuration list for PBXNativeTarget "STEWUITests" */;
 			buildPhases = (
+				378906873E93CC5CA9E38EDE /* [CP] Check Pods Manifest.lock */,
 				09EC34B62C26B3C500020FF8 /* Sources */,
 				09EC34B72C26B3C500020FF8 /* Frameworks */,
 				09EC34B82C26B3C500020FF8 /* Resources */,
+				CF4A75336508DB73BFB58586 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,9 +357,6 @@
 				Base,
 			);
 			mainGroup = 09EC34912C26B3C400020FF8;
-			packageReferences = (
-				09EC34CD2C26B98400020FF8 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */,
-			);
 			productRefGroup = 09EC349B2C26B3C400020FF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +400,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		378906873E93CC5CA9E38EDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-STEW-STEWUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74F25131C074BA553BF1BDCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-STEW-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90DB2187C2B85F14507462E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STEW/Pods-STEW-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STEW/Pods-STEW-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-STEW/Pods-STEW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CEFC48569CBF7553187CF83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-STEWTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF4A75336508DB73BFB58586 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STEW-STEWUITests/Pods-STEW-STEWUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STEW-STEWUITests/Pods-STEW-STEWUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-STEW-STEWUITests/Pods-STEW-STEWUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09EC34962C26B3C400020FF8 /* Sources */ = {
@@ -428,6 +568,7 @@
 /* Begin XCBuildConfiguration section */
 		09EC34C22C26B3C500020FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09EC34D22C26C4EE00020FF8 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -463,7 +604,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -526,7 +667,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -547,6 +688,7 @@
 		};
 		09EC34C52C26B3C500020FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6554D294A4AD51FBDE3285 /* Pods-STEW.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -574,6 +716,7 @@
 		};
 		09EC34C62C26B3C500020FF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0267436B25FEFA4ECC86FE2 /* Pods-STEW.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -601,6 +744,7 @@
 		};
 		09EC34C82C26B3C500020FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1603FB758B1DC19ABF0008C /* Pods-STEWTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -621,6 +765,7 @@
 		};
 		09EC34C92C26B3C500020FF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA8A84E506B4E6716D1DCC68 /* Pods-STEWTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -641,6 +786,7 @@
 		};
 		09EC34CB2C26B3C500020FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D82E019DD5593FF3DAC996D /* Pods-STEW-STEWUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -659,6 +805,7 @@
 		};
 		09EC34CC2C26B3C500020FF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74711501E87CC00609D2462C /* Pods-STEW-STEWUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -715,25 +862,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		09EC34CD2C26B98400020FF8 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.10.5;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		09EC34CE2C26B98400020FF8 /* KakaoMapsSDK-SPM */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 09EC34CD2C26B98400020FF8 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */;
-			productName = "KakaoMapsSDK-SPM";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09EC34922C26B3C400020FF8 /* Project object */;
 }
