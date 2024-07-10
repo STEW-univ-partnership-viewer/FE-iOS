@@ -8,7 +8,6 @@
 import UIKit
 
 class MainViewController: UITabBarController {
-    let APIKey = Bundle.main.infoDictionary?["APIKey"] as! String
 
     override func viewDidLoad() {
             super.viewDidLoad()

@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="STEW" customModuleProvider="target">
             <connections>
+                <outlet property="mapView" destination="hsK-Wv-bQL" id="niZ-mo-xgg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,8 +18,20 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsK-Wv-bQL" customClass="NMFMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hsK-Wv-bQL" secondAttribute="bottom" id="YPA-re-wPd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hsK-Wv-bQL" secondAttribute="trailing" id="duU-S7-IDK"/>
+                <constraint firstItem="hsK-Wv-bQL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ra3-5S-934"/>
+                <constraint firstItem="hsK-Wv-bQL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vBn-Y7-25j"/>
+            </constraints>
             <point key="canvasLocation" x="55" y="-11"/>
         </view>
     </objects>
