@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         NMFAuthManager.shared().clientId = Bundle.main.object(forInfoDictionaryKey: "APIKey") as? String
         // Override point for customization after application launch.
         return true

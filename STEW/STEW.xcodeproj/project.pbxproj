@@ -13,6 +13,7 @@
 		093CCF4D2C26D6C900B8E627 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093CCF4B2C26D6C900B8E627 /* ListViewController.xib */; };
 		093CCF512C26D6E900B8E627 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093CCF4F2C26D6E900B8E627 /* MypageViewController.swift */; };
 		093CCF522C26D6E900B8E627 /* MypageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093CCF502C26D6E900B8E627 /* MypageViewController.xib */; };
+		096950692C3DC52D0005450C /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 096950682C3DC52D0005450C /* Config.xcconfig */; };
 		09A2E8022C2806AC008F96E8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E8002C2806AC008F96E8 /* SettingViewController.swift */; };
 		09A2E8032C2806AC008F96E8 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A2E8012C2806AC008F96E8 /* SettingViewController.xib */; };
 		09A2E8072C2807AE008F96E8 /* DeveloperInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */; };
@@ -58,6 +59,7 @@
 		093CCF4B2C26D6C900B8E627 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		093CCF4F2C26D6E900B8E627 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		093CCF502C26D6E900B8E627 /* MypageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MypageViewController.xib; sourceTree = "<group>"; };
+		096950682C3DC52D0005450C /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		09A2E8002C2806AC008F96E8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		09A2E8012C2806AC008F96E8 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInformationViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +80,6 @@
 		09EC34BA2C26B3C500020FF8 /* STEWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STEWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EC34BE2C26B3C500020FF8 /* STEWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEWUITests.swift; sourceTree = "<group>"; };
 		09EC34C02C26B3C500020FF8 /* STEWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEWUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		09EC34D22C26C4EE00020FF8 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		6B6554D294A4AD51FBDE3285 /* Pods-STEW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEW.debug.xcconfig"; path = "Target Support Files/Pods-STEW/Pods-STEW.debug.xcconfig"; sourceTree = "<group>"; };
 		6D82E019DD5593FF3DAC996D /* Pods-STEW-STEWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEW-STEWUITests.debug.xcconfig"; path = "Target Support Files/Pods-STEW-STEWUITests/Pods-STEW-STEWUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		71205B7991665BD2B0514329 /* Pods_STEW_STEWUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEW_STEWUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,7 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				09EC349D2C26B3C400020FF8 /* AppDelegate.swift */,
-				09EC34D22C26C4EE00020FF8 /* Config.xcconfig */,
+				096950682C3DC52D0005450C /* Config.xcconfig */,
 				09EC349F2C26B3C400020FF8 /* SceneDelegate.swift */,
 				09EC34A12C26B3C400020FF8 /* MainViewController.swift */,
 				093CCF532C26D6ED00B8E627 /* MypageView */,
@@ -379,6 +380,7 @@
 				09A2E8082C2807AE008F96E8 /* DeveloperInformationViewController.xib in Resources */,
 				09EC34AA2C26B3C500020FF8 /* LaunchScreen.storyboard in Resources */,
 				093CCF482C26D69600B8E627 /* MapViewController.xib in Resources */,
+				096950692C3DC52D0005450C /* Config.xcconfig in Resources */,
 				093CCF4D2C26D6C900B8E627 /* ListViewController.xib in Resources */,
 				09EC34A72C26B3C500020FF8 /* Assets.xcassets in Resources */,
 				093CCF522C26D6E900B8E627 /* MypageViewController.xib in Resources */,
@@ -568,7 +570,7 @@
 /* Begin XCBuildConfiguration section */
 		09EC34C22C26B3C500020FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09EC34D22C26C4EE00020FF8 /* Config.xcconfig */;
+			baseConfigurationReference = 096950682C3DC52D0005450C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
