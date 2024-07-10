@@ -13,7 +13,7 @@
 		093CCF4D2C26D6C900B8E627 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093CCF4B2C26D6C900B8E627 /* ListViewController.xib */; };
 		093CCF512C26D6E900B8E627 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093CCF4F2C26D6E900B8E627 /* MypageViewController.swift */; };
 		093CCF522C26D6E900B8E627 /* MypageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093CCF502C26D6E900B8E627 /* MypageViewController.xib */; };
-		096950692C3DC52D0005450C /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 096950682C3DC52D0005450C /* Config.xcconfig */; };
+		0969506B2C3E57420005450C /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0969506A2C3E57420005450C /* Config.xcconfig */; };
 		09A2E8022C2806AC008F96E8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E8002C2806AC008F96E8 /* SettingViewController.swift */; };
 		09A2E8032C2806AC008F96E8 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A2E8012C2806AC008F96E8 /* SettingViewController.xib */; };
 		09A2E8072C2807AE008F96E8 /* DeveloperInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */; };
@@ -59,7 +59,7 @@
 		093CCF4B2C26D6C900B8E627 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		093CCF4F2C26D6E900B8E627 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		093CCF502C26D6E900B8E627 /* MypageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MypageViewController.xib; sourceTree = "<group>"; };
-		096950682C3DC52D0005450C /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
+		0969506A2C3E57420005450C /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../../STEWProject/Config.xcconfig; sourceTree = "<group>"; };
 		09A2E8002C2806AC008F96E8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		09A2E8012C2806AC008F96E8 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInformationViewController.swift; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				09EC349D2C26B3C400020FF8 /* AppDelegate.swift */,
-				096950682C3DC52D0005450C /* Config.xcconfig */,
+				0969506A2C3E57420005450C /* Config.xcconfig */,
 				09EC349F2C26B3C400020FF8 /* SceneDelegate.swift */,
 				09EC34A12C26B3C400020FF8 /* MainViewController.swift */,
 				093CCF532C26D6ED00B8E627 /* MypageView */,
@@ -377,10 +377,10 @@
 				09A2E8032C2806AC008F96E8 /* SettingViewController.xib in Resources */,
 				09BA7CB42C270951004F470E /* MypageTableViewCell.xib in Resources */,
 				09A2E80D2C2807C8008F96E8 /* InquiryViewController.xib in Resources */,
+				0969506B2C3E57420005450C /* Config.xcconfig in Resources */,
 				09A2E8082C2807AE008F96E8 /* DeveloperInformationViewController.xib in Resources */,
 				09EC34AA2C26B3C500020FF8 /* LaunchScreen.storyboard in Resources */,
 				093CCF482C26D69600B8E627 /* MapViewController.xib in Resources */,
-				096950692C3DC52D0005450C /* Config.xcconfig in Resources */,
 				093CCF4D2C26D6C900B8E627 /* ListViewController.xib in Resources */,
 				09EC34A72C26B3C500020FF8 /* Assets.xcassets in Resources */,
 				093CCF522C26D6E900B8E627 /* MypageViewController.xib in Resources */,
@@ -570,7 +570,7 @@
 /* Begin XCBuildConfiguration section */
 		09EC34C22C26B3C500020FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 096950682C3DC52D0005450C /* Config.xcconfig */;
+			baseConfigurationReference = 0969506A2C3E57420005450C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
