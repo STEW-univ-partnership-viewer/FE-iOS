@@ -9,29 +9,38 @@ import UIKit
 import NMapsMap
 
 class MapViewController: UIViewController {
-    @IBOutlet weak var mapView: NMFMapView!
+    @IBOutlet weak var mapView: NMFNaverMapView!
+    @IBOutlet weak var userLocationButton: UIButton!
+    
+    private let locationManager = CLLocationManager()
+    
+    private let locationOverlayIcon = NMFOverlayImage(image: .checkmark)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setMapUI()
     }
-    
-    private func setMapUI(){
-        mapView.isNightModeEnabled = false
-        mapView.positionMode = .compass
+    override func viewWillAppear(_ animated: Bool) {
         
-        let initialPosition = NMFCameraUpdate(scrollTo: NMGLatLng(lat: 37.494913714426986, lng: 126.95651999073173), zoomTo: 16)
-                mapView.moveCamera(initialPosition)
-        
-        let marker = NMFMarker()
-        marker.position = NMGLatLng(lat: 37.49463260514257, lng: 126.95777535856472)
-        marker.captionText = "총학생회 제휴 업체"
-        marker.mapView = mapView
-        
-        let infoWindow = NMFInfoWindow()
-        let dataSource = NMFInfoWindowDefaultTextSource.data()
-        dataSource.title = "서비스 콜라 줄게용!"
-        infoWindow.dataSource = dataSource
-        infoWindow.open(with: marker)
     }
-    
+    private func setMapUI(){
+        mapView.showLocationButton = false
+        mapView.showCompass = true
+        mapView.showZoomControls = false
+        mapView.mapView.positionMode = .compass
+        mapView.mapView.moveCamera(initialPosition)
+    }
+    @IBAction func userLocationButtonTapped(_ sender: UIButton) {
+        
+    }
+}
+
+// MARK: Generates Markers
+extension MapViewController {
+    func makeMarker(locationData: Location)->NMFMarker{
+        let marker = NMFMarker()
+        marker.position = NMGLatLng(lat: locationData.latitude, lng: locationData.longitude)
+        marker.captionText = locationData.name
+        return marker
+    }
 }
