@@ -25,6 +25,9 @@
                     <subviews>
                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i3p-2F-NOL">
                             <rect key="frame" x="324" y="14.666666666666671" width="51" height="31"/>
+                            <connections>
+                                <action selector="darkModeSwitchTapped:" destination="-1" eventType="valueChanged" id="ati-H4-Pwb"/>
+                            </connections>
                         </switch>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다크모드(추후 개발 예정)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9Y-iw-zIf">
                             <rect key="frame" x="20" y="19.666666666666671" width="167" height="21"/>

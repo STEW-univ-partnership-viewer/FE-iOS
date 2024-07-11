@@ -13,11 +13,14 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var nofiticationSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    override func viewWillAppear(_ animated: Bool) {
         uiSet()
-        
     }
     private func uiSet(){
-        
+        darkmodeSwitch.isOn = UserDefaults.standard.bool(forKey: "darkModeState")
+    }
+    @IBAction func darkModeSwitchTapped(_ sender: UISwitch) { UserDefaults.standard.set(darkmodeSwitch.isOn, forKey: "darkModeState")
     }
     
 }
