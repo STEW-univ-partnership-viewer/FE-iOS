@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Black.otf">
+            <string>Pretendard-Black</string>
+        </array>
+        <array key="Pretendard-Regular.otf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectCollegeViewController" customModule="STEW" customModuleProvider="target">
+            <connections>
+                <outlet property="collegePickerView" destination="mRt-ZP-1B3" id="xCP-KN-Rim"/>
+                <outlet property="nameSubtitleLabel" destination="opr-uI-ZEz" id="Dd5-MT-ErT"/>
+                <outlet property="nextButton" destination="1ho-aI-CJR" id="qu9-nV-bLr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRt-ZP-1B3">
+                    <rect key="frame" x="0.0" y="322.33333333333331" width="393" height="215.99999999999994"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </pickerView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00님은 어느 단과대에 소속되어 있나요?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opr-uI-ZEz">
+                    <rect key="frame" x="52.000000000000014" y="243" width="250.33333333333337" height="19.333333333333314"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 단과대는?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQv-oO-QAB">
+                    <rect key="frame" x="52" y="155" width="113" height="67"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Black" family="Pretendard" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ho-aI-CJR">
+                    <rect key="frame" x="64" y="718.66666666666663" width="265" height="60"/>
+                    <color key="backgroundColor" name="MainPurple"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="tDZ-rv-UXf"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="다음">
+                        <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="17"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="TjB-1X-df2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대학 생활의 즐거움!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKE-7H-xd0">
+                    <rect key="frame" x="135" y="798.66666666666663" width="123" height="19.333333333333371"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IbK-gO-8xz">
+                    <rect key="frame" x="52" y="59" width="289" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="1bJ-Dr-wen"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="EsJ-MK-3HG"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="DarkBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IbK-gO-8xz" secondAttribute="trailing" constant="52" id="7nB-4a-gCP"/>
+                <constraint firstItem="mRt-ZP-1B3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8P7-wY-87G"/>
+                <constraint firstItem="mRt-ZP-1B3" firstAttribute="top" secondItem="opr-uI-ZEz" secondAttribute="bottom" constant="60" id="FU8-Ef-6cn"/>
+                <constraint firstItem="opr-uI-ZEz" firstAttribute="top" secondItem="xQv-oO-QAB" secondAttribute="bottom" constant="21" id="J1i-J5-Cwc"/>
+                <constraint firstItem="nKE-7H-xd0" firstAttribute="top" secondItem="1ho-aI-CJR" secondAttribute="bottom" constant="20" id="K0U-CD-fJx"/>
+                <constraint firstItem="opr-uI-ZEz" firstAttribute="leading" secondItem="xQv-oO-QAB" secondAttribute="leading" id="SDG-u3-dUY"/>
+                <constraint firstItem="IbK-gO-8xz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="V5C-t9-gE3"/>
+                <constraint firstItem="nKE-7H-xd0" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="W2q-Oi-4hH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nKE-7H-xd0" secondAttribute="bottom" id="Xvh-zX-k0f"/>
+                <constraint firstItem="1ho-aI-CJR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="iR6-YG-N3g"/>
+                <constraint firstItem="xQv-oO-QAB" firstAttribute="top" secondItem="IbK-gO-8xz" secondAttribute="bottom" constant="36" id="jEF-9e-fEV"/>
+                <constraint firstItem="mRt-ZP-1B3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nJN-Q9-7WR"/>
+                <constraint firstItem="IbK-gO-8xz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="52" id="tMt-6b-3nK"/>
+                <constraint firstItem="xQv-oO-QAB" firstAttribute="leading" secondItem="IbK-gO-8xz" secondAttribute="leading" id="tQW-rx-Yo9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1ho-aI-CJR" secondAttribute="trailing" constant="64" id="uxs-Be-qjc"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="TitleLogo" width="271" height="64"/>
+        <namedColor name="DarkBackgroundColor">
+            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainPurple">
+            <color red="0.43137254901960786" green="0.16470588235294117" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -12,7 +12,7 @@ import NMapsMap
 let initialPosition = NMFCameraUpdate(scrollTo: NMGLatLng(lat: 37.494913714426986, lng: 126.95651999073173), zoomTo: 16)
 
 // 업체 데이터 저장 구조체
-struct Location{
+struct Location: Codable{
     let name: String
     let category: categories
     let latitude: Double
@@ -22,7 +22,7 @@ struct Location{
 }
 
 // 업체 카테고리 enum
-enum categories{
+enum categories : Codable{
     case culture
     case cafe
     case restaurant
@@ -42,10 +42,10 @@ let stone504 = Location(name: "스톤504 스테이크하우스",
                         category: .restaurant,
                         latitude: 37.517808199016606,
                         longitude: 126.97103086709166,
-                        unit: [soongsilSciencephysics,soongsilITcomputer],
+                        unit: [soongsilSciencePhysics,soongsilITComputer],
                         benefit: [
-                            soongsilSciencephysics : "파스타 공짜",
-                            soongsilITcomputer : "피자 공짜"])
+                            soongsilSciencePhysics : "파스타 공짜",
+                            soongsilITComputer : "피자 공짜"])
 
 let trueMuscleGym = Location(name: "트루머슬짐 PT",
                              category: .culture,
