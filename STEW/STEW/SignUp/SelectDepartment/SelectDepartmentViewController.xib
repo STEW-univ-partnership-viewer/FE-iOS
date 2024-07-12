@@ -30,7 +30,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gms-W2-R52">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gms-W2-R52">
                     <rect key="frame" x="52" y="59" width="289" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="8GG-fD-u37"/>
@@ -100,7 +100,7 @@
         </view>
     </objects>
     <resources>
-        <image name="TitleLogo" width="271" height="64"/>
+        <image name="logo" width="95" height="63"/>
         <namedColor name="DarkBackgroundColor">
             <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -14,6 +14,8 @@
 		093CCF512C26D6E900B8E627 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093CCF4F2C26D6E900B8E627 /* MypageViewController.swift */; };
 		093CCF522C26D6E900B8E627 /* MypageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093CCF502C26D6E900B8E627 /* MypageViewController.xib */; };
 		0969506B2C3E57420005450C /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0969506A2C3E57420005450C /* Config.xcconfig */; };
+		0976DEAE2C41353B00BC3B90 /* ListViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976DEAC2C41353B00BC3B90 /* ListViewCollectionViewCell.swift */; };
+		0976DEAF2C41353B00BC3B90 /* ListViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */; };
 		09A2E8022C2806AC008F96E8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E8002C2806AC008F96E8 /* SettingViewController.swift */; };
 		09A2E8032C2806AC008F96E8 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A2E8012C2806AC008F96E8 /* SettingViewController.xib */; };
 		09A2E8072C2807AE008F96E8 /* DeveloperInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */; };
@@ -82,6 +84,8 @@
 		093CCF4F2C26D6E900B8E627 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		093CCF502C26D6E900B8E627 /* MypageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MypageViewController.xib; sourceTree = "<group>"; };
 		0969506A2C3E57420005450C /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../../STEWProject/Config.xcconfig; sourceTree = "<group>"; };
+		0976DEAC2C41353B00BC3B90 /* ListViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewCollectionViewCell.xib; sourceTree = "<group>"; };
 		09A2E8002C2806AC008F96E8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		09A2E8012C2806AC008F96E8 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInformationViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 			children = (
 				093CCF4A2C26D6C900B8E627 /* ListViewController.swift */,
 				093CCF4B2C26D6C900B8E627 /* ListViewController.xib */,
+				0976DEB02C41354100BC3B90 /* ListViewCollectionView */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -193,6 +198,15 @@
 				09BA7CB52C270957004F470E /* MypageTableView */,
 			);
 			path = MypageView;
+			sourceTree = "<group>";
+		};
+		0976DEB02C41354100BC3B90 /* ListViewCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0976DEAC2C41353B00BC3B90 /* ListViewCollectionViewCell.swift */,
+				0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */,
+			);
+			path = ListViewCollectionView;
 			sourceTree = "<group>";
 		};
 		09A2E8042C28078E008F96E8 /* SettingView */ = {
@@ -518,6 +532,7 @@
 				09E7209B2C404DC60076FC0C /* SelectUniversityViewController.xib in Resources */,
 				093CCF4D2C26D6C900B8E627 /* ListViewController.xib in Resources */,
 				09EC34A72C26B3C500020FF8 /* Assets.xcassets in Resources */,
+				0976DEAF2C41353B00BC3B90 /* ListViewCollectionViewCell.xib in Resources */,
 				09E720A72C404DF20076FC0C /* ShowUnitResultViewController.xib in Resources */,
 				093CCF522C26D6E900B8E627 /* MypageViewController.xib in Resources */,
 			);
@@ -651,6 +666,7 @@
 				09E720A62C404DF20076FC0C /* ShowUnitResultViewController.swift in Sources */,
 				09EC34A22C26B3C400020FF8 /* MainViewController.swift in Sources */,
 				09E720A22C404DDB0076FC0C /* SelectDepartmentViewController.swift in Sources */,
+				0976DEAE2C41353B00BC3B90 /* ListViewCollectionViewCell.swift in Sources */,
 				09EC349E2C26B3C400020FF8 /* AppDelegate.swift in Sources */,
 				09E720962C404DA70076FC0C /* NickNameViewController.swift in Sources */,
 				09A2E80C2C2807C8008F96E8 /* InquiryViewController.swift in Sources */,
