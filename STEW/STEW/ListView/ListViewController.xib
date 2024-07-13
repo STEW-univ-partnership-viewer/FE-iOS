@@ -50,8 +50,8 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5qC-tg-6Sd">
-                    <rect key="frame" x="24" y="203.66666666666669" width="359" height="614.33333333333326"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5qC-tg-6Sd">
+                    <rect key="frame" x="24" y="203.66666666666669" width="359" height="648.33333333333326"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="udH-Zi-FfE">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -76,7 +76,7 @@
                 <constraint firstItem="XiL-KV-Ddr" firstAttribute="bottom" secondItem="5qC-tg-6Sd" secondAttribute="top" constant="-0.5" id="QEQ-Wf-LDY"/>
                 <constraint firstItem="XiL-KV-Ddr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QwU-4e-KTQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0aH-b0-xLi" secondAttribute="trailing" id="RjG-gN-y3I"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5qC-tg-6Sd" secondAttribute="bottom" id="UYe-8d-vw5"/>
+                <constraint firstAttribute="bottom" secondItem="5qC-tg-6Sd" secondAttribute="bottom" id="UYe-8d-vw5"/>
                 <constraint firstItem="5qC-tg-6Sd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="ZBK-Bq-NDq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XiL-KV-Ddr" secondAttribute="trailing" id="aVu-sG-8AN"/>
                 <constraint firstItem="5qC-tg-6Sd" firstAttribute="top" secondItem="0aH-b0-xLi" secondAttribute="bottom" id="fyE-zz-iqf"/>

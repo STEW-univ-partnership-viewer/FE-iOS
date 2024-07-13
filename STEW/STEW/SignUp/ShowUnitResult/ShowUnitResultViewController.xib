@@ -34,7 +34,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kie-6B-P5Q">
-                    <rect key="frame" x="64" y="718.66666666666663" width="265" height="60"/>
+                    <rect key="frame" x="64" y="713.66666666666663" width="265" height="60"/>
                     <color key="backgroundColor" name="MainPurple"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="bh4-KM-M0y"/>
@@ -49,7 +49,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ag-b5-urZ">
-                    <rect key="frame" x="64" y="640.66666666666663" width="265" height="60"/>
+                    <rect key="frame" x="64" y="635.66666666666663" width="265" height="60"/>
                     <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="CbT-ND-17K"/>
@@ -64,7 +64,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대학 생활의 즐거움!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYt-YT-y3J">
-                    <rect key="frame" x="135" y="798.66666666666663" width="123" height="19.333333333333371"/>
+                    <rect key="frame" x="135" y="793.66666666666663" width="123" height="19.333333333333371"/>
                     <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -110,7 +110,7 @@
                 <constraint firstItem="vi3-2x-74A" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="LyD-9u-uzd"/>
                 <constraint firstItem="HeH-7y-tkG" firstAttribute="leading" secondItem="gVa-1z-mx9" secondAttribute="leading" id="SHB-AB-kAp"/>
                 <constraint firstItem="PxQ-Cb-uBJ" firstAttribute="top" secondItem="HeH-7y-tkG" secondAttribute="bottom" constant="21" id="dN0-Oc-mLE"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fYt-YT-y3J" secondAttribute="bottom" id="fti-ee-h7f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fYt-YT-y3J" secondAttribute="bottom" constant="5" id="fti-ee-h7f"/>
                 <constraint firstItem="Kie-6B-P5Q" firstAttribute="top" secondItem="0ag-b5-urZ" secondAttribute="bottom" constant="18" id="jFt-IN-HU0"/>
                 <constraint firstItem="gVa-1z-mx9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="52" id="nvi-iA-tGQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kie-6B-P5Q" secondAttribute="trailing" constant="64" id="pHw-PR-VW0"/>

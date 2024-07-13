@@ -14,7 +14,7 @@ class ListViewController: UIViewController {
     private var university,college,department: Unit?
     private var sectionList: [String?] = ["전체 학생회", "총학생회", "단과대 학생회", "학부 학생회"]
     private var wholeBenefits,universityBenefits,collegeBenefits,departmentBenefits: [Location: String]?
-    private var selectedIndexPath: IndexPath?
+    private var selectedIndexPath: IndexPath? = IndexPath(item: 0, section: 0)
     override func viewDidLoad() {
         super.viewDidLoad()
         uiSet()
