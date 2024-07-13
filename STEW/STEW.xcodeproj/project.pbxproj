@@ -18,6 +18,8 @@
 		0976DEAF2C41353B00BC3B90 /* ListViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */; };
 		0976DEB32C41543900BC3B90 /* tabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976DEB12C41543900BC3B90 /* tabBarCollectionViewCell.swift */; };
 		0976DEB42C41543900BC3B90 /* tabBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0976DEB22C41543900BC3B90 /* tabBarCollectionViewCell.xib */; };
+		0976DEBD2C4264EC00BC3B90 /* CompanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976DEBB2C4264EC00BC3B90 /* CompanyDetailViewController.swift */; };
+		0976DEBE2C4264EC00BC3B90 /* CompanyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0976DEBC2C4264EC00BC3B90 /* CompanyDetailViewController.xib */; };
 		09A2E8022C2806AC008F96E8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E8002C2806AC008F96E8 /* SettingViewController.swift */; };
 		09A2E8032C2806AC008F96E8 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A2E8012C2806AC008F96E8 /* SettingViewController.xib */; };
 		09A2E8072C2807AE008F96E8 /* DeveloperInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */; };
@@ -90,6 +92,8 @@
 		0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewCollectionViewCell.xib; sourceTree = "<group>"; };
 		0976DEB12C41543900BC3B90 /* tabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarCollectionViewCell.swift; sourceTree = "<group>"; };
 		0976DEB22C41543900BC3B90 /* tabBarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tabBarCollectionViewCell.xib; sourceTree = "<group>"; };
+		0976DEBB2C4264EC00BC3B90 /* CompanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailViewController.swift; sourceTree = "<group>"; };
+		0976DEBC2C4264EC00BC3B90 /* CompanyDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyDetailViewController.xib; sourceTree = "<group>"; };
 		09A2E8002C2806AC008F96E8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		09A2E8012C2806AC008F96E8 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInformationViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 			children = (
 				093CCF4A2C26D6C900B8E627 /* ListViewController.swift */,
 				093CCF4B2C26D6C900B8E627 /* ListViewController.xib */,
+				0976DEBF2C4264F000BC3B90 /* CompanyDetailView */,
 				0976DEB52C41543D00BC3B90 /* tabBarCollectionView */,
 				0976DEB02C41354100BC3B90 /* ListViewCollectionView */,
 			);
@@ -220,6 +225,15 @@
 				0976DEB22C41543900BC3B90 /* tabBarCollectionViewCell.xib */,
 			);
 			path = tabBarCollectionView;
+			sourceTree = "<group>";
+		};
+		0976DEBF2C4264F000BC3B90 /* CompanyDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				0976DEBB2C4264EC00BC3B90 /* CompanyDetailViewController.swift */,
+				0976DEBC2C4264EC00BC3B90 /* CompanyDetailViewController.xib */,
+			);
+			path = CompanyDetailView;
 			sourceTree = "<group>";
 		};
 		09A2E8042C28078E008F96E8 /* SettingView */ = {
@@ -536,6 +550,7 @@
 				09E720BC2C405F890076FC0C /* Pretendard-SemiBold.otf in Resources */,
 				09E720B82C405F890076FC0C /* Pretendard-Regular.otf in Resources */,
 				09E7209F2C404DD20076FC0C /* SelectCollegeViewController.xib in Resources */,
+				0976DEBE2C4264EC00BC3B90 /* CompanyDetailViewController.xib in Resources */,
 				09E720BE2C405F890076FC0C /* Pretendard-ExtraLight.otf in Resources */,
 				09A2E8082C2807AE008F96E8 /* DeveloperInformationViewController.xib in Resources */,
 				09E720B92C405F890076FC0C /* Pretendard-Bold.otf in Resources */,
@@ -677,6 +692,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0976DEBD2C4264EC00BC3B90 /* CompanyDetailViewController.swift in Sources */,
 				09E7209E2C404DD20076FC0C /* SelectCollegeViewController.swift in Sources */,
 				09E720A62C404DF20076FC0C /* ShowUnitResultViewController.swift in Sources */,
 				09EC34A22C26B3C400020FF8 /* MainViewController.swift in Sources */,

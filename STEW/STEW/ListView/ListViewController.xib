@@ -25,6 +25,13 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiL-KV-Ddr">
+                    <rect key="frame" x="0.0" y="201.33333333333334" width="393" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Mpw-a4-NCq"/>
+                    </constraints>
+                </view>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5xk-vv-bii">
                     <rect key="frame" x="34" y="49" width="100" height="60"/>
                     <constraints>
@@ -33,13 +40,13 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제휴 업체 리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woP-sT-Xww">
-                    <rect key="frame" x="34" y="126.00000000000001" width="181.66666666666666" height="33.666666666666671"/>
+                    <rect key="frame" x="34" y="126.00000000000001" width="181.66666666666666" height="32.666666666666671"/>
                     <fontDescription key="fontDescription" name="Pretendard-Black" family="Pretendard" pointSize="28"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0aH-b0-xLi">
-                    <rect key="frame" x="0.0" y="179.66666666666666" width="393" height="24"/>
+                    <rect key="frame" x="0.0" y="178.66666666666666" width="393" height="24"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="24" id="mdj-Te-20U"/>
                     </constraints>
@@ -51,7 +58,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5qC-tg-6Sd">
-                    <rect key="frame" x="24" y="203.66666666666669" width="359" height="648.33333333333326"/>
+                    <rect key="frame" x="24" y="202.66666666666669" width="359" height="649.33333333333326"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="udH-Zi-FfE">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -59,13 +66,6 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiL-KV-Ddr">
-                    <rect key="frame" x="0.0" y="202.33333333333334" width="393" height="1"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="1" id="Mpw-a4-NCq"/>
-                    </constraints>
-                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="DarkBackgroundColor"/>

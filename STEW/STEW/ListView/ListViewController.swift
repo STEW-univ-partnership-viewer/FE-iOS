@@ -14,7 +14,8 @@ class ListViewController: UIViewController {
     private var university,college,department: Unit?
     private var sectionList: [String?] = ["전체 학생회", "총학생회", "단과대 학생회", "학부 학생회"]
     private var wholeBenefits,universityBenefits,collegeBenefits,departmentBenefits: [Location: String]?
-    private var selectedIndexPath: IndexPath? = IndexPath(item: 0, section: 0)
+    private var selectedIndexPath: IndexPath = IndexPath(item: 0, section: 0)
+    var blurView: UIVisualEffectView?  // Blur view variable to hold reference
     override func viewDidLoad() {
         super.viewDidLoad()
         uiSet()
@@ -49,10 +50,9 @@ extension ListViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == tabBarCollectionView {
             // Deselect the previously selected cell if there is one
-            if let previousIndexPath = selectedIndexPath {
-                if let previousCell = collectionView.cellForItem(at: previousIndexPath) as? tabBarCollectionViewCell {
-                    previousCell.notSelected()
-                }
+            let previousIndexPath = selectedIndexPath
+            if let previousCell = collectionView.cellForItem(at: previousIndexPath) as? tabBarCollectionViewCell {
+                previousCell.notSelected()
             }
             // Select the new cell
             if let selectedCell = collectionView.cellForItem(at: indexPath) as? tabBarCollectionViewCell {
@@ -61,6 +61,17 @@ extension ListViewController: UICollectionViewDelegate{
             // Update the selected index path
             selectedIndexPath = indexPath
             listViewCollectionView.reloadData()
+        }else {
+            let nextVC = CompanyDetailViewController()
+            let array = [wholeBenefits,universityBenefits,collegeBenefits,departmentBenefits]
+            var location: Location?
+            if let keysArray = array[selectedIndexPath.row]?.keys.sorted(by: { $0.name < $1.name }) as? [Location] {
+                location = keysArray[indexPath.row]
+                nextVC.locationData = location
+                nextVC.benefitData = array[selectedIndexPath.row]?[location ?? goCine]
+            }
+            nextVC.modalPresentationStyle = .overCurrentContext
+            present(nextVC, animated: true)
         }
     }
 }
@@ -71,7 +82,7 @@ extension ListViewController: UICollectionViewDataSource{
         case tabBarCollectionView :
             return 4
         case listViewCollectionView :
-            switch selectedIndexPath?.row{
+            switch selectedIndexPath.row{
             case 0:
                 return wholeBenefits?.count ?? 0
             case 1:
@@ -105,7 +116,7 @@ extension ListViewController: UICollectionViewDataSource{
                         }
                         
                         var location: Location?
-                        switch selectedIndexPath?.row {
+                        switch selectedIndexPath.row {
                         case 0:
                             if let keysArray = wholeBenefits?.keys.sorted(by: { $0.name < $1.name }) as? [Location] {
                                 location = keysArray[indexPath.row]
