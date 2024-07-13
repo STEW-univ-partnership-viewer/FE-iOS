@@ -39,6 +39,8 @@ class SelectUniversityViewController: UIViewController {
         } catch {
             print("데이터 인코딩 실패")
         }
+        let selectedUniversity = universityList[universityPickerView.selectedRow(inComponent: 0)]
+        saveUnit(unit: selectedUniversity, forKey: "university")
         let nextVC = SelectCollegeViewController()
         navigationController?.pushViewController(nextVC, animated: true)
         

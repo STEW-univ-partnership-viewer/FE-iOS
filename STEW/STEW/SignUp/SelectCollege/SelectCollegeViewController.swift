@@ -41,12 +41,8 @@ class SelectCollegeViewController: UIViewController {
         nextButton.layer.cornerRadius = 30
     }
     @IBAction func nextButtonTapped(_ sender: UIButton) {
-        do {
-            let encodedData = try encoder.encode(collegeList?[collegePickerView.selectedRow(inComponent: 0)])
-            UserDefaults.standard.set(encodedData, forKey: "college")
-        } catch {
-            print("데이터 인코딩 실패")
-        }
+        let selectedCollege = collegeList?[collegePickerView.selectedRow(inComponent: 0)]
+        saveUnit(unit: selectedCollege, forKey: "college")
         let nextVC = SelectDepartmentViewController()
         navigationController?.pushViewController(nextVC, animated: true)
         

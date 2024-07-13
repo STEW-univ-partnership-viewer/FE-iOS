@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Medium.otf">
+            <string>Pretendard-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="tabBarCollectionViewCell" customModule="STEW" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="116" height="41"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="116" height="41"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nE1-xZ-Jmv">
+                        <rect key="frame" x="0.0" y="0.0" width="116" height="41"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학생회" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQs-na-SGD">
+                                <rect key="frame" x="0.0" y="0.0" width="116" height="38.666666666666664"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTj-fj-jSc">
+                                <rect key="frame" x="0.0" y="38.666666666666664" width="116" height="2.3333333333333357"/>
+                                <color key="backgroundColor" name="MainLightPurple"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2.5" id="dOZ-XV-ROF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="zQs-na-SGD" firstAttribute="width" secondItem="nE1-xZ-Jmv" secondAttribute="width" id="58y-iX-t6H"/>
+                            <constraint firstItem="zQs-na-SGD" firstAttribute="top" secondItem="nE1-xZ-Jmv" secondAttribute="top" id="bRE-7j-TKt"/>
+                            <constraint firstItem="zQs-na-SGD" firstAttribute="centerX" secondItem="nE1-xZ-Jmv" secondAttribute="centerX" id="cbT-TP-IGe"/>
+                            <constraint firstAttribute="trailing" secondItem="KTj-fj-jSc" secondAttribute="trailing" id="fU6-Xc-5Hr"/>
+                            <constraint firstItem="KTj-fj-jSc" firstAttribute="leading" secondItem="nE1-xZ-Jmv" secondAttribute="leading" id="ibf-Sn-BVm"/>
+                            <constraint firstAttribute="bottom" secondItem="KTj-fj-jSc" secondAttribute="bottom" id="vNn-WU-hDR"/>
+                            <constraint firstItem="KTj-fj-jSc" firstAttribute="top" secondItem="zQs-na-SGD" secondAttribute="bottom" id="vVY-8Z-hxc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="nE1-xZ-Jmv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1sN-MT-jHo"/>
+                <constraint firstAttribute="bottom" secondItem="nE1-xZ-Jmv" secondAttribute="bottom" id="FKA-hn-Ete"/>
+                <constraint firstAttribute="trailing" secondItem="nE1-xZ-Jmv" secondAttribute="trailing" id="SHH-nD-z5l"/>
+                <constraint firstItem="nE1-xZ-Jmv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rTd-GS-X7Y"/>
+            </constraints>
+            <size key="customSize" width="263" height="157"/>
+            <connections>
+                <outlet property="UnderLineView" destination="KTj-fj-jSc" id="atc-aM-4F7"/>
+                <outlet property="unitNameLabel" destination="zQs-na-SGD" id="0fj-d8-7jE"/>
+            </connections>
+            <point key="canvasLocation" x="178.62595419847327" y="6.6901408450704229"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="MainLightPurple">
+            <color red="0.9137254901960784" green="0.85882352941176465" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

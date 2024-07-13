@@ -16,6 +16,8 @@
 		0969506B2C3E57420005450C /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0969506A2C3E57420005450C /* Config.xcconfig */; };
 		0976DEAE2C41353B00BC3B90 /* ListViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976DEAC2C41353B00BC3B90 /* ListViewCollectionViewCell.swift */; };
 		0976DEAF2C41353B00BC3B90 /* ListViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */; };
+		0976DEB32C41543900BC3B90 /* tabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976DEB12C41543900BC3B90 /* tabBarCollectionViewCell.swift */; };
+		0976DEB42C41543900BC3B90 /* tabBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0976DEB22C41543900BC3B90 /* tabBarCollectionViewCell.xib */; };
 		09A2E8022C2806AC008F96E8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E8002C2806AC008F96E8 /* SettingViewController.swift */; };
 		09A2E8032C2806AC008F96E8 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A2E8012C2806AC008F96E8 /* SettingViewController.xib */; };
 		09A2E8072C2807AE008F96E8 /* DeveloperInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */; };
@@ -86,6 +88,8 @@
 		0969506A2C3E57420005450C /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../../STEWProject/Config.xcconfig; sourceTree = "<group>"; };
 		0976DEAC2C41353B00BC3B90 /* ListViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewCollectionViewCell.xib; sourceTree = "<group>"; };
+		0976DEB12C41543900BC3B90 /* tabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarCollectionViewCell.swift; sourceTree = "<group>"; };
+		0976DEB22C41543900BC3B90 /* tabBarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tabBarCollectionViewCell.xib; sourceTree = "<group>"; };
 		09A2E8002C2806AC008F96E8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		09A2E8012C2806AC008F96E8 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		09A2E8052C2807AE008F96E8 /* DeveloperInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInformationViewController.swift; sourceTree = "<group>"; };
@@ -172,7 +176,6 @@
 			children = (
 				093CCF452C26D69600B8E627 /* MapViewController.swift */,
 				093CCF462C26D69600B8E627 /* MapViewController.xib */,
-				09E7208E2C3EFAAE0076FC0C /* LocationData.swift */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			children = (
 				093CCF4A2C26D6C900B8E627 /* ListViewController.swift */,
 				093CCF4B2C26D6C900B8E627 /* ListViewController.xib */,
+				0976DEB52C41543D00BC3B90 /* tabBarCollectionView */,
 				0976DEB02C41354100BC3B90 /* ListViewCollectionView */,
 			);
 			path = ListView;
@@ -207,6 +211,15 @@
 				0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */,
 			);
 			path = ListViewCollectionView;
+			sourceTree = "<group>";
+		};
+		0976DEB52C41543D00BC3B90 /* tabBarCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0976DEB12C41543900BC3B90 /* tabBarCollectionViewCell.swift */,
+				0976DEB22C41543900BC3B90 /* tabBarCollectionViewCell.xib */,
+			);
+			path = tabBarCollectionView;
 			sourceTree = "<group>";
 		};
 		09A2E8042C28078E008F96E8 /* SettingView */ = {
@@ -347,6 +360,7 @@
 				09EC349D2C26B3C400020FF8 /* AppDelegate.swift */,
 				09E720C12C4065C70076FC0C /* UIExtension.swift */,
 				09E720902C4044CF0076FC0C /* UnitData.swift */,
+				09E7208E2C3EFAAE0076FC0C /* LocationData.swift */,
 				0969506A2C3E57420005450C /* Config.xcconfig */,
 				09EC349F2C26B3C400020FF8 /* SceneDelegate.swift */,
 				09EC34A12C26B3C400020FF8 /* MainViewController.swift */,
@@ -534,6 +548,7 @@
 				09EC34A72C26B3C500020FF8 /* Assets.xcassets in Resources */,
 				0976DEAF2C41353B00BC3B90 /* ListViewCollectionViewCell.xib in Resources */,
 				09E720A72C404DF20076FC0C /* ShowUnitResultViewController.xib in Resources */,
+				0976DEB42C41543900BC3B90 /* tabBarCollectionViewCell.xib in Resources */,
 				093CCF522C26D6E900B8E627 /* MypageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,6 +685,7 @@
 				09EC349E2C26B3C400020FF8 /* AppDelegate.swift in Sources */,
 				09E720962C404DA70076FC0C /* NickNameViewController.swift in Sources */,
 				09A2E80C2C2807C8008F96E8 /* InquiryViewController.swift in Sources */,
+				0976DEB32C41543900BC3B90 /* tabBarCollectionViewCell.swift in Sources */,
 				09EC34A02C26B3C400020FF8 /* SceneDelegate.swift in Sources */,
 				09A2E8022C2806AC008F96E8 /* SettingViewController.swift in Sources */,
 				09BA7CB32C270951004F470E /* MypageTableViewCell.swift in Sources */,

@@ -28,7 +28,7 @@ class MapViewController: UIViewController {
         mapView.showCompass = true
         mapView.showZoomControls = false
         mapView.mapView.positionMode = .compass
-        mapView.mapView.moveCamera(initialPosition)
+        mapView.mapView.moveCamera(soongsilInitialPosition)
     }
     @IBAction func userLocationButtonTapped(_ sender: UIButton) {
         

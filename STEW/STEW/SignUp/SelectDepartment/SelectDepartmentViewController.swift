@@ -43,12 +43,8 @@ class SelectDepartmentViewController: UIViewController {
         nameSubtitleLabel.text = "거의 다 왔어요!\n"+(UserDefaults.standard.string(forKey: "nickname") ?? "오류") + "님은\n 어느 학과/부에 소속되어 있나요?"
     }
     @IBAction func nextButtonTapped(_ sender: UIButton) {
-        do {
-            let encodedData = try encoder.encode(departmentList?[departmentPickerView.selectedRow(inComponent: 0)])
-            UserDefaults.standard.set(encodedData, forKey: "department")
-        } catch {
-            print("데이터 인코딩 실패")
-        }
+        let selectedDepartment = departmentList?[departmentPickerView.selectedRow(inComponent: 0)]
+        saveUnit(unit: selectedDepartment, forKey: "department")
         let nextVC = ShowUnitResultViewController()
         navigationController?.pushViewController(nextVC, animated: true)
     }
