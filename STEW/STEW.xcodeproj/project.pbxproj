@@ -175,6 +175,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0904458D2C43BECD00C75221 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				09E720902C4044CF0076FC0C /* UnitData.swift */,
+				09E7208E2C3EFAAE0076FC0C /* LocationData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		093CCF492C26D6B000B8E627 /* MapView */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,8 +382,7 @@
 				09E720AE2C405EF30076FC0C /* Fonts */,
 				09EC349D2C26B3C400020FF8 /* AppDelegate.swift */,
 				09E720C12C4065C70076FC0C /* UIExtension.swift */,
-				09E720902C4044CF0076FC0C /* UnitData.swift */,
-				09E7208E2C3EFAAE0076FC0C /* LocationData.swift */,
+				0904458D2C43BECD00C75221 /* Data */,
 				0969506A2C3E57420005450C /* Config.xcconfig */,
 				09EC349F2C26B3C400020FF8 /* SceneDelegate.swift */,
 				09EC34A12C26B3C400020FF8 /* MainViewController.swift */,
