@@ -49,7 +49,15 @@ enum categories: String, Codable{
     case cafe = "카페"
     case restaurant = "식당"
     case alcohol = "술집"
+    case University = "대학교"
 }
+
+let soongsilUniversityDefaultPosition = Location(name: "숭실대학교",
+                                                 category: .culture,
+                                                 latitude: 37.4963106081388,
+                                                 longitude: 126.95743516167666,
+                                                 address: "서울특별시 동작구 상도동 상도로 369",
+                                                 image: .soongsilLogo)
 
 let realFry = Location(name: "리얼후라이 숭실대점",
                        category: .restaurant,

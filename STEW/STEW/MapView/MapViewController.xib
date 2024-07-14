@@ -1,60 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Regular.otf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="STEW" customModuleProvider="target">
             <connections>
+                <outlet property="buttonStackView" destination="Ldp-Gh-D3L" id="leI-rH-2Zp"/>
+                <outlet property="collegeButton" destination="hyE-Ow-tbN" id="MEw-JD-lNv"/>
+                <outlet property="departmentButton" destination="7CT-uK-quh" id="rqQ-JX-rvU"/>
                 <outlet property="mapView" destination="hsK-Wv-bQL" id="niZ-mo-xgg"/>
-                <outlet property="userLocationButton" destination="iwe-NS-v5u" id="XYm-6h-9Fh"/>
+                <outlet property="searchView" destination="Dh0-aq-zi2" id="GlM-1X-ABu"/>
+                <outlet property="universityButton" destination="kh8-1d-ScB" id="jiC-WE-P4t"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsK-Wv-bQL" customClass="NMFNaverMapView">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwe-NS-v5u">
-                    <rect key="frame" x="313" y="668" width="50" height="50"/>
-                    <color key="backgroundColor" systemColor="linkColor"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dh0-aq-zi2" userLabel="SearchView">
+                    <rect key="frame" x="24" y="27.666666666666671" width="327" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제휴 업체를 검색해보세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzS-OK-Wk0">
+                            <rect key="frame" x="25" y="12.333333333333334" width="175.33333333333334" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="V6d-QO-yJT">
+                            <rect key="frame" x="285.66666666666669" y="12.999999999999996" width="21.333333333333314" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="V6d-QO-yJT" secondAttribute="height" multiplier="19:17" id="bZ5-1a-8Sh"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7s-bj-1mE">
+                            <rect key="frame" x="0.0" y="0.0" width="327" height="45"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="3jX-3k-BMI"/>
-                        <constraint firstAttribute="width" constant="50" id="xWa-z4-mWg"/>
+                        <constraint firstItem="V6d-QO-yJT" firstAttribute="trailing" secondItem="Dh0-aq-zi2" secondAttribute="trailing" constant="-20" id="46c-Fn-Xhf"/>
+                        <constraint firstItem="e7s-bj-1mE" firstAttribute="leading" secondItem="Dh0-aq-zi2" secondAttribute="leading" id="7Wi-9P-CmT"/>
+                        <constraint firstItem="qzS-OK-Wk0" firstAttribute="centerY" secondItem="Dh0-aq-zi2" secondAttribute="centerY" id="9sh-TR-h2i"/>
+                        <constraint firstItem="e7s-bj-1mE" firstAttribute="top" secondItem="Dh0-aq-zi2" secondAttribute="top" id="FWa-mL-69B"/>
+                        <constraint firstAttribute="trailing" secondItem="e7s-bj-1mE" secondAttribute="trailing" id="fIM-dk-6w9"/>
+                        <constraint firstAttribute="height" constant="45" id="hQc-uC-ogs"/>
+                        <constraint firstAttribute="bottom" secondItem="e7s-bj-1mE" secondAttribute="bottom" id="hVu-Cl-WO7"/>
+                        <constraint firstItem="V6d-QO-yJT" firstAttribute="top" secondItem="Dh0-aq-zi2" secondAttribute="top" constant="13" id="lcB-n3-yBQ"/>
+                        <constraint firstItem="qzS-OK-Wk0" firstAttribute="leading" secondItem="Dh0-aq-zi2" secondAttribute="leading" constant="25" id="sTU-Oq-bCd"/>
+                        <constraint firstItem="V6d-QO-yJT" firstAttribute="centerY" secondItem="Dh0-aq-zi2" secondAttribute="centerY" id="ugd-2g-LYo"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title=""/>
-                    <connections>
-                        <action selector="userLocationButtonTapped:" destination="-1" eventType="touchUpInside" id="eQk-0f-4oM"/>
-                    </connections>
-                </button>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ldp-Gh-D3L">
+                    <rect key="frame" x="24" y="92.666666666666671" width="327" height="35"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kh8-1d-ScB">
+                            <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="35"/>
+                            <color key="backgroundColor" name="DarkGrayColor"/>
+                            <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="총학생회">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="universityButtonTapped:" destination="-1" eventType="touchUpInside" id="JM7-Sg-dhi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyE-Ow-tbN">
+                            <rect key="frame" x="112.33333333333334" y="0.0" width="102.33333333333334" height="35"/>
+                            <color key="backgroundColor" name="DarkGrayColor"/>
+                            <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="단과대 학생회">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="collegeButtonTapped:" destination="-1" eventType="touchUpInside" id="erq-X3-u67"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CT-uK-quh">
+                            <rect key="frame" x="224.66666666666666" y="0.0" width="102.33333333333334" height="35"/>
+                            <color key="backgroundColor" name="DarkGrayColor"/>
+                            <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="학부 학생회">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="departmentButtonTapped:" destination="-1" eventType="touchUpInside" id="JLy-1t-n2I"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Syp-S3-ani"/>
+                        <constraint firstItem="kh8-1d-ScB" firstAttribute="height" secondItem="Ldp-Gh-D3L" secondAttribute="height" id="r0o-Or-9so"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="iwe-NS-v5u" secondAttribute="bottom" constant="100" id="97K-6b-V45"/>
+                <constraint firstItem="Dh0-aq-zi2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="CDV-Y1-F7b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ldp-Gh-D3L" secondAttribute="trailing" constant="24" id="GOF-ai-5BC"/>
+                <constraint firstItem="Dh0-aq-zi2" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NFM-Xe-YpT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dh0-aq-zi2" secondAttribute="trailing" constant="24" id="Rk8-Mg-fYh"/>
                 <constraint firstAttribute="bottom" secondItem="hsK-Wv-bQL" secondAttribute="bottom" id="YPA-re-wPd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hsK-Wv-bQL" secondAttribute="trailing" id="duU-S7-IDK"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iwe-NS-v5u" secondAttribute="trailing" constant="30" id="ltq-Vq-1SI"/>
+                <constraint firstItem="Ldp-Gh-D3L" firstAttribute="top" secondItem="Dh0-aq-zi2" secondAttribute="bottom" constant="20" id="kl6-nm-7tt"/>
+                <constraint firstItem="Ldp-Gh-D3L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="lo4-JQ-fR5"/>
                 <constraint firstItem="hsK-Wv-bQL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ra3-5S-934"/>
                 <constraint firstItem="hsK-Wv-bQL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vBn-Y7-25j"/>
             </constraints>
-            <point key="canvasLocation" x="55" y="-11"/>
+            <point key="canvasLocation" x="54.198473282442748" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="Search" width="19" height="19"/>
+        <namedColor name="DarkGrayColor">
+            <color red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
