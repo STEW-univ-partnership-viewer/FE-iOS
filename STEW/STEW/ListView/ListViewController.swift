@@ -11,6 +11,7 @@ class ListViewController: UIViewController {
     
     @IBOutlet weak var tabBarCollectionView: UICollectionView!
     @IBOutlet weak var listViewCollectionView: UICollectionView!
+    @IBOutlet weak var noCompanyImageView: UIImageView!
     private var university,college,department: Unit?
     private var sectionList: [String?] = ["전체 학생회", "총학생회", "단과대 학생회", "학부 학생회"]
     private var wholeBenefits,universityBenefits,collegeBenefits,departmentBenefits: [Location: String]?
@@ -60,6 +61,7 @@ extension ListViewController: UICollectionViewDelegate{
             }
             // Update the selected index path
             selectedIndexPath = indexPath
+            noCompanyImageView.isHidden = false
             listViewCollectionView.reloadData()
         }else {
             let nextVC = CompanyDetailViewController()
@@ -119,18 +121,22 @@ extension ListViewController: UICollectionViewDataSource{
                         switch selectedIndexPath.row {
                         case 0:
                             if let keysArray = wholeBenefits?.keys.sorted(by: { $0.name < $1.name }) as? [Location] {
+                                noCompanyImageView.isHidden = keysArray.count != 0
                                 location = keysArray[indexPath.row]
                             }
                         case 1:
                             if let keysArray = universityBenefits?.keys.sorted(by: { $0.name < $1.name }) as? [Location] {
+                                noCompanyImageView.isHidden = keysArray.count != 0
                                 location = keysArray[indexPath.row]
                             }
                         case 2:
                             if let keysArray = collegeBenefits?.keys.sorted(by: { $0.name < $1.name }) as? [Location] {
+                                noCompanyImageView.isHidden = keysArray.count != 0
                                 location = keysArray[indexPath.row]
                             }
                         case 3:
                             if let keysArray = departmentBenefits?.keys.sorted(by: { $0.name < $1.name }) as? [Location] {
+                                noCompanyImageView.isHidden = keysArray.count != 0
                                 location = keysArray[indexPath.row]
                             }
                         default:

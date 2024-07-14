@@ -16,6 +16,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListViewController" customModule="STEW" customModuleProvider="target">
             <connections>
                 <outlet property="listViewCollectionView" destination="5qC-tg-6Sd" id="AEj-b4-lgQ"/>
+                <outlet property="noCompanyImageView" destination="d0c-XV-FXc" id="lK4-9w-f5O"/>
                 <outlet property="tabBarCollectionView" destination="0aH-b0-xLi" id="dkz-M7-AkK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -66,17 +67,26 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oops" translatesAutoresizingMaskIntoConstraints="NO" id="d0c-XV-FXc">
+                    <rect key="frame" x="38" y="373.66666666666669" width="317" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="d0c-XV-FXc" secondAttribute="height" multiplier="317:130" id="2w2-Vo-TLN"/>
+                        <constraint firstAttribute="height" constant="130" id="PQY-lz-ePJ"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="DarkBackgroundColor"/>
             <constraints>
                 <constraint firstItem="5xk-vv-bii" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-10" id="3CL-Bk-pEt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5qC-tg-6Sd" secondAttribute="trailing" constant="10" id="IHJ-7Z-hnB"/>
+                <constraint firstItem="d0c-XV-FXc" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="MXJ-OP-cQm"/>
                 <constraint firstItem="5xk-vv-bii" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="34" id="O2K-iI-O4F"/>
                 <constraint firstItem="XiL-KV-Ddr" firstAttribute="bottom" secondItem="5qC-tg-6Sd" secondAttribute="top" constant="-0.5" id="QEQ-Wf-LDY"/>
                 <constraint firstItem="XiL-KV-Ddr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QwU-4e-KTQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0aH-b0-xLi" secondAttribute="trailing" id="RjG-gN-y3I"/>
                 <constraint firstAttribute="bottom" secondItem="5qC-tg-6Sd" secondAttribute="bottom" id="UYe-8d-vw5"/>
+                <constraint firstItem="d0c-XV-FXc" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Wff-rf-V3K"/>
                 <constraint firstItem="5qC-tg-6Sd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="ZBK-Bq-NDq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XiL-KV-Ddr" secondAttribute="trailing" id="aVu-sG-8AN"/>
                 <constraint firstItem="5qC-tg-6Sd" firstAttribute="top" secondItem="0aH-b0-xLi" secondAttribute="bottom" id="fyE-zz-iqf"/>
@@ -90,6 +100,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Oops" width="317" height="130"/>
         <image name="logo" width="95" height="63"/>
         <namedColor name="DarkBackgroundColor">
             <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
