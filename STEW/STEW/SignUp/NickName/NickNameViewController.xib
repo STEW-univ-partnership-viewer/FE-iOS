@@ -28,7 +28,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="JWf-46-2cP">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="JWf-46-2cP">
                     <rect key="frame" x="52" y="59" width="289" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="MPp-q0-XJV"/>
@@ -56,7 +56,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzY-Al-gf9">
-                    <rect key="frame" x="64" y="718.66666666666663" width="265" height="60"/>
+                    <rect key="frame" x="64" y="713.66666666666663" width="265" height="60"/>
                     <color key="backgroundColor" name="MainPurple"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="p2T-mR-vsH"/>
@@ -71,7 +71,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대학 생활의 즐거움!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wb5-67-QY6">
-                    <rect key="frame" x="135" y="798.66666666666663" width="123" height="19.333333333333371"/>
+                    <rect key="frame" x="135" y="793.66666666666663" width="123" height="19.333333333333371"/>
                     <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -86,7 +86,7 @@
                 <constraint firstItem="AzY-Al-gf9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="I5l-Zf-Js0"/>
                 <constraint firstItem="Wb5-67-QY6" firstAttribute="top" secondItem="AzY-Al-gf9" secondAttribute="bottom" constant="20" id="Jfm-dS-eA4"/>
                 <constraint firstItem="JWf-46-2cP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="52" id="Kcw-pk-KN5"/>
-                <constraint firstItem="Wb5-67-QY6" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="MeZ-pY-XaG"/>
+                <constraint firstItem="Wb5-67-QY6" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-5" id="MeZ-pY-XaG"/>
                 <constraint firstItem="dKg-qR-b7D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="V8E-ln-gTK"/>
                 <constraint firstItem="Fha-E6-qsI" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="X3t-j7-6jz"/>
                 <constraint firstItem="JWf-46-2cP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="h60-fU-Jxs"/>
@@ -101,7 +101,7 @@
         </view>
     </objects>
     <resources>
-        <image name="TitleLogo" width="271" height="64"/>
+        <image name="logo" width="95" height="63"/>
         <namedColor name="DarkBackgroundColor">
             <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

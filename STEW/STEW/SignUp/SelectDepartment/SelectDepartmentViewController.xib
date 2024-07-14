@@ -30,7 +30,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gms-W2-R52">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gms-W2-R52">
                     <rect key="frame" x="52" y="59" width="289" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="8GG-fD-u37"/>
@@ -38,7 +38,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1N-gX-CJg">
-                    <rect key="frame" x="64" y="718.66666666666663" width="265" height="60"/>
+                    <rect key="frame" x="64" y="713.66666666666663" width="265" height="60"/>
                     <color key="backgroundColor" name="MainPurple"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="CUf-Ka-XV8"/>
@@ -53,7 +53,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대학 생활의 즐거움!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I32-Sg-UAj">
-                    <rect key="frame" x="135" y="798.66666666666663" width="123" height="19.333333333333371"/>
+                    <rect key="frame" x="135" y="793.66666666666663" width="123" height="19.333333333333371"/>
                     <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -81,7 +81,7 @@
             <color key="backgroundColor" name="DarkBackgroundColor"/>
             <constraints>
                 <constraint firstItem="jiK-la-eN8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1TW-sw-Ua8"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="I32-Sg-UAj" secondAttribute="bottom" id="MAr-bH-P6f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="I32-Sg-UAj" secondAttribute="bottom" constant="5" id="MAr-bH-P6f"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H1N-gX-CJg" secondAttribute="trailing" constant="64" id="TvX-Sm-ByG"/>
                 <constraint firstItem="vPf-SY-6Kp" firstAttribute="leading" secondItem="uU8-VF-Plj" secondAttribute="leading" id="WNv-36-TIl"/>
                 <constraint firstItem="uU8-VF-Plj" firstAttribute="leading" secondItem="gms-W2-R52" secondAttribute="leading" id="Wd3-kU-HVB"/>
@@ -100,7 +100,7 @@
         </view>
     </objects>
     <resources>
-        <image name="TitleLogo" width="271" height="64"/>
+        <image name="logo" width="95" height="63"/>
         <namedColor name="DarkBackgroundColor">
             <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

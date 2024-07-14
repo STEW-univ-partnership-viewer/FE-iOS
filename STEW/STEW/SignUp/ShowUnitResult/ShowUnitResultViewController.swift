@@ -25,27 +25,9 @@ class ShowUnitResultViewController: UIViewController {
         resetButton.layer.cornerRadius = 30
         subtitleLabel.setLineSpacing(spacing: 9)
         unitResultLabel.setLineSpacing(spacing: 16)
-        if let data = UserDefaults.standard.data(forKey: "university") {
-            do {
-                university = try decoder.decode(Unit.self, from: data)
-            }catch {
-                print("데이터 디코딩 실패")
-            }
-        }
-        if let data = UserDefaults.standard.data(forKey: "college") {
-            do {
-                college = try decoder.decode(Unit.self, from: data)
-            }catch {
-                print("데이터 디코딩 실패")
-            }
-        }
-        if let data = UserDefaults.standard.data(forKey: "department") {
-            do {
-                department = try decoder.decode(Unit.self, from: data)
-            }catch {
-                print("데이터 디코딩 실패")
-            }
-        }
+        university = decodeUnit(forKey: "university")
+        college = decodeUnit(forKey: "college")
+        department = decodeUnit(forKey: "department")
         unitResultLabel.text = (university?.unitName ?? "오류") + "\n" + (college?.unitName ?? "") + "\n" + (department?.unitName ?? "")
         unitResultLabel.textAlignment = .center
 

@@ -46,7 +46,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ho-aI-CJR">
-                    <rect key="frame" x="64" y="718.66666666666663" width="265" height="60"/>
+                    <rect key="frame" x="64" y="713.66666666666663" width="265" height="60"/>
                     <color key="backgroundColor" name="MainPurple"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="tDZ-rv-UXf"/>
@@ -61,12 +61,12 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대학 생활의 즐거움!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKE-7H-xd0">
-                    <rect key="frame" x="135" y="798.66666666666663" width="123" height="19.333333333333371"/>
+                    <rect key="frame" x="135" y="793.66666666666663" width="123" height="19.333333333333371"/>
                     <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IbK-gO-8xz">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="IbK-gO-8xz">
                     <rect key="frame" x="52" y="59" width="289" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="1bJ-Dr-wen"/>
@@ -85,7 +85,7 @@
                 <constraint firstItem="opr-uI-ZEz" firstAttribute="leading" secondItem="xQv-oO-QAB" secondAttribute="leading" id="SDG-u3-dUY"/>
                 <constraint firstItem="IbK-gO-8xz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="V5C-t9-gE3"/>
                 <constraint firstItem="nKE-7H-xd0" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="W2q-Oi-4hH"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nKE-7H-xd0" secondAttribute="bottom" id="Xvh-zX-k0f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nKE-7H-xd0" secondAttribute="bottom" constant="5" id="Xvh-zX-k0f"/>
                 <constraint firstItem="1ho-aI-CJR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="iR6-YG-N3g"/>
                 <constraint firstItem="xQv-oO-QAB" firstAttribute="top" secondItem="IbK-gO-8xz" secondAttribute="bottom" constant="36" id="jEF-9e-fEV"/>
                 <constraint firstItem="mRt-ZP-1B3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nJN-Q9-7WR"/>
@@ -97,7 +97,7 @@
         </view>
     </objects>
     <resources>
-        <image name="TitleLogo" width="271" height="64"/>
+        <image name="logo" width="95" height="63"/>
         <namedColor name="DarkBackgroundColor">
             <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

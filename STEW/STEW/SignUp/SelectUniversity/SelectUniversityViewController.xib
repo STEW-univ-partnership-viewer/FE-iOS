@@ -43,7 +43,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QG5-GV-7Pc">
-                    <rect key="frame" x="64" y="718.66666666666663" width="265" height="60"/>
+                    <rect key="frame" x="64" y="713.66666666666663" width="265" height="60"/>
                     <color key="backgroundColor" name="MainPurple"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="E8L-YT-Cww"/>
@@ -58,12 +58,12 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대학 생활의 즐거움!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlQ-93-LE1">
-                    <rect key="frame" x="135" y="798.66666666666663" width="123" height="19.333333333333371"/>
+                    <rect key="frame" x="135" y="793.66666666666663" width="123" height="19.333333333333371"/>
                     <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pQn-gu-tEg">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="pQn-gu-tEg">
                     <rect key="frame" x="52" y="59" width="289" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="cmM-VC-cte"/>
@@ -75,19 +75,19 @@
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </pickerView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="재학 중인 학교가 보이지 않나요?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRd-pP-TLr">
-                    <rect key="frame" x="113.66666666666667" y="637.33333333333337" width="165.66666666666663" height="15.666666666666629"/>
+                    <rect key="frame" x="113.66666666666667" y="632.33333333333337" width="165.66666666666663" height="15.666666666666629"/>
                     <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-&gt; 학교 등록하러 가기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4A-D6-O91">
-                    <rect key="frame" x="128" y="662" width="137.33333333333337" height="18.666666666666629"/>
+                    <rect key="frame" x="128" y="657" width="137.33333333333337" height="18.666666666666629"/>
                     <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V07-gt-XnJ">
-                    <rect key="frame" x="113.66666666666667" y="637.33333333333337" width="165.66666666666663" height="43.333333333333371"/>
+                    <rect key="frame" x="113.66666666666667" y="632.33333333333337" width="165.66666666666663" height="43.333333333333371"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain"/>
                     <connections>
@@ -107,7 +107,7 @@
                 <constraint firstItem="O4A-D6-O91" firstAttribute="top" secondItem="BRd-pP-TLr" secondAttribute="bottom" constant="9" id="Myu-R5-O2z"/>
                 <constraint firstItem="QG5-GV-7Pc" firstAttribute="top" secondItem="O4A-D6-O91" secondAttribute="bottom" constant="38" id="NGi-IX-Pim"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QG5-GV-7Pc" secondAttribute="trailing" constant="64" id="SaR-QU-v5C"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hlQ-93-LE1" secondAttribute="bottom" id="VBf-4J-xna"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hlQ-93-LE1" secondAttribute="bottom" constant="5" id="VBf-4J-xna"/>
                 <constraint firstItem="V07-gt-XnJ" firstAttribute="trailing" secondItem="BRd-pP-TLr" secondAttribute="trailing" id="WCX-Wi-q9W"/>
                 <constraint firstItem="V07-gt-XnJ" firstAttribute="leading" secondItem="BRd-pP-TLr" secondAttribute="leading" id="XZv-Fo-J7f"/>
                 <constraint firstItem="BRd-pP-TLr" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="XqP-EC-pdg"/>
@@ -126,7 +126,7 @@
         </view>
     </objects>
     <resources>
-        <image name="TitleLogo" width="271" height="64"/>
+        <image name="logo" width="95" height="63"/>
         <namedColor name="DarkBackgroundColor">
             <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
