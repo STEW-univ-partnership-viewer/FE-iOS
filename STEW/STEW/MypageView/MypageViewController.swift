@@ -2,83 +2,120 @@
 //  MypageViewController.swift
 //  STEW
 //
-//  Created by 황채웅 on 6/22/24.
+//  Created by 황채웅 on 7/21/24.
 //
 
 import UIKit
 
 class MypageViewController: UIViewController {
-    @IBOutlet weak var mypageTableView: UITableView!
-    
-    private var configList = ["환경설정","개발자 정보","문의"]
+    @IBOutlet weak var userProfileImageView: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var userUniversityLabel: UILabel!
+    @IBOutlet weak var mypageCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        uiSet()
-        tableViewConfig()
+        collectionViewConfig()
     }
-    private func uiSet(){
-    }
-    private func tableViewConfig(){
-        mypageTableView.delegate = self
-        mypageTableView.dataSource = self
-        let nibName = UINib(nibName: "MypageTableViewCell", bundle: nil)
-        mypageTableView.register(nibName, forCellReuseIdentifier: "MypageTableViewCell")
+    
+    private func collectionViewConfig() {
+        mypageCollectionView.backgroundColor = .clear
+        mypageCollectionView.register(UINib(nibName: "MypageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MypageCollectionViewCell")
+        mypageCollectionView.register(UINib(nibName: "MypageSectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "MypageSectionHeaderView")
+        mypageCollectionView.register(UINib(nibName: "MypageSectionFooterView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "MypageSectionFooterView")
+        mypageCollectionView.delegate = self
+        mypageCollectionView.dataSource = self
     }
 }
 
-extension MypageViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return configList.count
+extension MypageViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: collectionView.bounds.width, height: 66)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        if section == 2{
+            return CGSize(width: collectionView.bounds.width, height: 15)
+        }else {
+            return CGSize(width: collectionView.bounds.width, height: 1)
+        }
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.bounds.width, height: 35)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 22, right: 0)
+    }
+}
+
+extension MypageViewController: UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 3
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        switch section {
+        case 0: return 3
+        case 1: return 1
+        default: return 2
+        }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = mypageTableView.dequeueReusableCell(withIdentifier: "MypageTableViewCell", for: indexPath) as? MypageTableViewCell else { return UITableViewCell() }
-        cell.mypageTitleLabel.text = configList[indexPath.row]
-        cell.selectionStyle = .none
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MypageCollectionViewCell", for: indexPath) as? MypageCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        cell.mypageLabelText = {
+            switch indexPath.section {
+            case 0:
+                switch indexPath.row {
+                case 0: return "닉네임 수정"
+                case 1: return "프로필 사진 수정"
+                default: return "나의 학교 정보 수정"
+                }
+            case 1: return "문의하기"
+            default:
+                switch indexPath.row {
+                case 0: return "환경설정"
+                default: return "만든 사람들"
+                }
+            }
+        }()
+        cell.awakeFromNib()  // Manually call awakeFromNib to update the label text
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: 추가 UI 구현하여 연결하기
-        switch indexPath.row{
-            case 0:
-                showSettingVC();
-                break
-            case 1:
-                showDevInfoVC();
-                break
-            case 2:
-                showInquiryVC();
-                break
-            default:
-                break
-        }
-        
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
-    }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "MypageSectionHeaderView", for: indexPath) as? MypageSectionHeaderView else {
+                return UICollectionReusableView()
+            }
+            header.mypageSectionLabelText = {
+                switch indexPath.section {
+                case 0: return "정보 수정"
+                case 1: return "고객센터"
+                default: return "서비스 설정"
+                }
+            }()
+            header.awakeFromNib()  // Manually call awakeFromNib to update the label text
+            return header
+        case UICollectionView.elementKindSectionFooter:
+            guard let footer = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "MypageSectionFooterView", for: indexPath) as? MypageSectionFooterView else {
+                return UICollectionReusableView()
+            }
+            if indexPath.section == 2 {
+                footer.backgroundColor = .clear
+                footer.versionLabel.isHidden = false
+            }else {
+                footer.backgroundColor = .white
+                footer.versionLabel.isHidden = true
+            }
+            return footer
+        default:
+            return UICollectionReusableView()
+        }
+    }
 }
 
-extension MypageViewController{
-    func showSettingVC() {
-        let vc = SettingViewController()
-        if let sheet = vc.sheetPresentationController {
-                sheet.detents = [.medium()]
-        }
-        self.present(vc, animated: true)
-    }
-    func showDevInfoVC() {
-        let vc = DeveloperInformationViewController()
-        if let sheet = vc.sheetPresentationController {
-                sheet.detents = [.medium()]
-        }
-        self.present(vc, animated: true)
-    }
-    func showInquiryVC() {
-        let vc = InquiryViewController()
-        self.present(vc, animated: true)
-    }
-    
+extension MypageViewController: UICollectionViewDelegate {
+    // TODO: 화면 전환
 }
