@@ -35,7 +35,7 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dh0-aq-zi2" userLabel="SearchView">
-                    <rect key="frame" x="24" y="27.666666666666671" width="327" height="45"/>
+                    <rect key="frame" x="24" y="50" width="327" height="45"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제휴 업체를 검색해보세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzS-OK-Wk0">
                             <rect key="frame" x="25" y="12.333333333333334" width="175.33333333333334" height="20.333333333333329"/>
@@ -44,7 +44,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="V6d-QO-yJT">
-                            <rect key="frame" x="285.66666666666669" y="12.999999999999996" width="21.333333333333314" height="19"/>
+                            <rect key="frame" x="285.66666666666669" y="13" width="21.333333333333314" height="19"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="V6d-QO-yJT" secondAttribute="height" multiplier="19:17" id="bZ5-1a-8Sh"/>
                             </constraints>
@@ -70,7 +70,7 @@
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ldp-Gh-D3L">
-                    <rect key="frame" x="24" y="92.666666666666671" width="327" height="35"/>
+                    <rect key="frame" x="24" y="115" width="327" height="35"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kh8-1d-ScB">
                             <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="35"/>
@@ -120,7 +120,7 @@
             <constraints>
                 <constraint firstItem="Dh0-aq-zi2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="CDV-Y1-F7b"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ldp-Gh-D3L" secondAttribute="trailing" constant="24" id="GOF-ai-5BC"/>
-                <constraint firstItem="Dh0-aq-zi2" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NFM-Xe-YpT"/>
+                <constraint firstItem="Dh0-aq-zi2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NFM-Xe-YpT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dh0-aq-zi2" secondAttribute="trailing" constant="24" id="Rk8-Mg-fYh"/>
                 <constraint firstAttribute="bottom" secondItem="hsK-Wv-bQL" secondAttribute="bottom" id="YPA-re-wPd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hsK-Wv-bQL" secondAttribute="trailing" id="duU-S7-IDK"/>

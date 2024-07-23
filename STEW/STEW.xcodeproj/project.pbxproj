@@ -11,6 +11,8 @@
 		093CCF482C26D69600B8E627 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093CCF462C26D69600B8E627 /* MapViewController.xib */; };
 		093CCF4C2C26D6C900B8E627 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093CCF4A2C26D6C900B8E627 /* ListViewController.swift */; };
 		093CCF4D2C26D6C900B8E627 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093CCF4B2C26D6C900B8E627 /* ListViewController.xib */; };
+		095D0CF82C4FFFDD00886B20 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095D0CF62C4FFFDD00886B20 /* SettingsViewController.swift */; };
+		095D0CF92C4FFFDD00886B20 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095D0CF72C4FFFDD00886B20 /* SettingsViewController.xib */; };
 		0969506B2C3E57420005450C /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0969506A2C3E57420005450C /* Config.xcconfig */; };
 		0976DEAE2C41353B00BC3B90 /* ListViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976DEAC2C41353B00BC3B90 /* ListViewCollectionViewCell.swift */; };
 		0976DEAF2C41353B00BC3B90 /* ListViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */; };
@@ -83,6 +85,8 @@
 		093CCF462C26D69600B8E627 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		093CCF4A2C26D6C900B8E627 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		093CCF4B2C26D6C900B8E627 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		095D0CF62C4FFFDD00886B20 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		095D0CF72C4FFFDD00886B20 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		0969506A2C3E57420005450C /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../../STEWProject/Config.xcconfig; sourceTree = "<group>"; };
 		0976DEAC2C41353B00BC3B90 /* ListViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -206,11 +210,21 @@
 			children = (
 				09C3F4D32C4D16BA00C2E3A3 /* MypageViewController.swift */,
 				09C3F4D42C4D16BA00C2E3A3 /* MypageViewController.xib */,
+				095D0CFA2C4FFFE200886B20 /* SettingsView */,
 				09C3F4E22C4D21FD00C2E3A3 /* MypageCollectionView */,
 				09C3F4DD2C4D1DFF00C2E3A3 /* MypageSectionHeaderView */,
 				09C3F4E92C4D286200C2E3A3 /* MypageSectionFooterView */,
 			);
 			path = MypageView;
+			sourceTree = "<group>";
+		};
+		095D0CFA2C4FFFE200886B20 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				095D0CF62C4FFFDD00886B20 /* SettingsViewController.swift */,
+				095D0CF72C4FFFDD00886B20 /* SettingsViewController.xib */,
+			);
+			path = SettingsView;
 			sourceTree = "<group>";
 		};
 		0976DEB02C41354100BC3B90 /* ListViewCollectionView */ = {
@@ -551,6 +565,7 @@
 				09E720BD2C405F890076FC0C /* Pretendard-Medium.otf in Resources */,
 				093CCF482C26D69600B8E627 /* MapViewController.xib in Resources */,
 				09C3F4D62C4D16BA00C2E3A3 /* MypageViewController.xib in Resources */,
+				095D0CF92C4FFFDD00886B20 /* SettingsViewController.xib in Resources */,
 				09E7209B2C404DC60076FC0C /* SelectUniversityViewController.xib in Resources */,
 				09C3F4E72C4D282600C2E3A3 /* MypageSectionFooterView.xib in Resources */,
 				093CCF4D2C26D6C900B8E627 /* ListViewController.xib in Resources */,
@@ -687,6 +702,7 @@
 			files = (
 				0976DEBD2C4264EC00BC3B90 /* CompanyDetailViewController.swift in Sources */,
 				09E7209E2C404DD20076FC0C /* SelectCollegeViewController.swift in Sources */,
+				095D0CF82C4FFFDD00886B20 /* SettingsViewController.swift in Sources */,
 				09C3F4E62C4D282600C2E3A3 /* MypageSectionFooterView.swift in Sources */,
 				09C3F4E02C4D21F800C2E3A3 /* MypageCollectionViewCell.swift in Sources */,
 				09E720A62C404DF20076FC0C /* ShowUnitResultViewController.swift in Sources */,

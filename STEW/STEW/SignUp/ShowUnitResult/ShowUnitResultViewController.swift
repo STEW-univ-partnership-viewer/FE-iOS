@@ -12,7 +12,6 @@ class ShowUnitResultViewController: UIViewController {
     @IBOutlet weak var resetButton: UIButton!
     @IBOutlet private weak var subtitleLabel: UILabel!
     @IBOutlet weak var unitResultLabel: UILabel!
-    private var university, college, department: Unit?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +24,9 @@ class ShowUnitResultViewController: UIViewController {
         resetButton.layer.cornerRadius = 30
         subtitleLabel.setLineSpacing(spacing: 9)
         unitResultLabel.setLineSpacing(spacing: 16)
-        university = decodeUnit(forKey: "university")
-        college = decodeUnit(forKey: "college")
-        department = decodeUnit(forKey: "department")
-        unitResultLabel.text = (university?.unitName ?? "오류") + "\n" + (college?.unitName ?? "") + "\n" + (department?.unitName ?? "")
-        unitResultLabel.textAlignment = .center
+        if let university = decodeUnit(forKey: "university"), let college = decodeUnit(forKey: "college"), let department = decodeUnit(forKey: "department") {
+            unitResultLabel.text = university.unitName + "\n" + college.unitName + "\n" + department.unitName
+        }
 
     }
     @IBAction func resetButtonTapped(_ sender: UIButton) {
