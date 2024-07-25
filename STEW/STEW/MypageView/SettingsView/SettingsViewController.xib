@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Regular.otf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="STEW" customModuleProvider="target">
+            <connections>
+                <outlet property="nightModeSwitch" destination="D5O-7m-yTS" id="g0I-lo-4iB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5O-7m-yTS">
+                    <rect key="frame" x="320" y="83" width="51" height="31"/>
+                    <connections>
+                        <action selector="nightModeSwitchChanged:" destination="-1" eventType="valueChanged" id="Q20-I7-Fls"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도 다크모드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ft-9J-T5E">
+                    <rect key="frame" x="24.000000000000007" y="83" width="92.666666666666686" height="31"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYo-Jx-vV1">
+                    <rect key="frame" x="24" y="138" width="345" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="EI4-Fc-fdp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.23328993055555558" green="0.23328993055555558" blue="0.23328993055555558" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="6Ft-9J-T5E" firstAttribute="centerY" secondItem="D5O-7m-yTS" secondAttribute="centerY" id="2xo-0h-4UI"/>
+                <constraint firstItem="nYo-Jx-vV1" firstAttribute="top" secondItem="6Ft-9J-T5E" secondAttribute="bottom" constant="24" id="4dO-2N-zOL"/>
+                <constraint firstItem="D5O-7m-yTS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="ALq-fd-YCV"/>
+                <constraint firstItem="nYo-Jx-vV1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="HeL-tk-Htk"/>
+                <constraint firstItem="6Ft-9J-T5E" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="Kru-en-Soc"/>
+                <constraint firstItem="6Ft-9J-T5E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="PxM-Tc-EJQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nYo-Jx-vV1" secondAttribute="trailing" constant="24" id="Vx9-FX-9T6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D5O-7m-yTS" secondAttribute="trailing" constant="24" id="gvQ-Qw-PTa"/>
+            </constraints>
+            <point key="canvasLocation" x="81.679389312977094" y="-11.267605633802818"/>
+        </view>
+    </objects>
+</document>

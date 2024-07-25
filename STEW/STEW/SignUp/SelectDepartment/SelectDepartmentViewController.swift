@@ -56,7 +56,7 @@ extension SelectDepartmentViewController: UIPickerViewDelegate{
         guard let titleData = departmentList?[row].unitName else { return NSAttributedString() }
         let attributes: [NSAttributedString.Key: Any] = [
                     .foregroundColor: UIColor.white,
-                    .font: UIFont(name: "Pretendard-Bold", size: 38) ?? UIFont.systemFont(ofSize: 38)]
+                .font: UIFont(name: "Pretendard-Bold", size: 38) ?? UIFont.systemFont(ofSize: 38)]
         let attributedString = NSAttributedString(string: titleData, attributes: attributes)
         return attributedString
     }

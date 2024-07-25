@@ -44,7 +44,7 @@ class MapViewController: UIViewController {
     private func setMapUI(){
         mapView.mapView.mapType = UserDefaults.standard.bool(forKey: "darkModeState") ? .navi : .basic
         mapView.mapView.setLayerGroup("NMF_LAYER_GROUP_BUILDING", isEnabled: false)
-        mapView.mapView.isNightModeEnabled = true
+        mapView.mapView.isNightModeEnabled = UserDefaults.standard.bool(forKey: "isNightModeEnabled")
         mapView.showLocationButton = false
         mapView.showCompass = false
         mapView.showZoomControls = false

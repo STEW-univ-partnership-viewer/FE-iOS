@@ -17,6 +17,9 @@ class MypageViewController: UIViewController {
         super.viewDidLoad()
         collectionViewConfig()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        loadProfile()
+    }
     
     private func collectionViewConfig() {
         mypageCollectionView.backgroundColor = .clear
@@ -25,6 +28,20 @@ class MypageViewController: UIViewController {
         mypageCollectionView.register(UINib(nibName: "MypageSectionFooterView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "MypageSectionFooterView")
         mypageCollectionView.delegate = self
         mypageCollectionView.dataSource = self
+    }
+    private func loadProfile(){
+        if let university = decodeUnit(forKey: "university"),
+           let college = decodeUnit(forKey: "college"),
+           let department = decodeUnit(forKey: "department") {
+            userUniversityLabel.text = university.unitName + " " + college.unitName + " " + department.unitName
+        }
+        if let nickname = UserDefaults.standard.string(forKey: "nickname"){
+            userNameLabel.text = nickname+"님 안녕하세요!"
+            let attributedStr = NSMutableAttributedString(string: userNameLabel.text!)
+            attributedStr.addAttribute(.foregroundColor, value: UIColor.mainPurple, range: (userNameLabel.text! as NSString).range(of:nickname))
+            userNameLabel.attributedText = attributedStr
+        }
+        
     }
 }
 
@@ -36,7 +53,7 @@ extension MypageViewController: UICollectionViewDelegateFlowLayout {
         if section == 2{
             return CGSize(width: collectionView.bounds.width, height: 15)
         }else {
-            return CGSize(width: collectionView.bounds.width, height: 1)
+            return CGSize(width: collectionView.bounds.width, height: 0.5)
         }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -79,7 +96,7 @@ extension MypageViewController: UICollectionViewDataSource {
                 }
             }
         }()
-        cell.awakeFromNib()  // Manually call awakeFromNib to update the label text
+        cell.awakeFromNib()
         return cell
     }
     
@@ -96,7 +113,7 @@ extension MypageViewController: UICollectionViewDataSource {
                 default: return "서비스 설정"
                 }
             }()
-            header.awakeFromNib()  // Manually call awakeFromNib to update the label text
+            header.awakeFromNib()
             return header
         case UICollectionView.elementKindSectionFooter:
             guard let footer = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "MypageSectionFooterView", for: indexPath) as? MypageSectionFooterView else {
@@ -106,7 +123,7 @@ extension MypageViewController: UICollectionViewDataSource {
                 footer.backgroundColor = .clear
                 footer.versionLabel.isHidden = false
             }else {
-                footer.backgroundColor = .white
+                footer.backgroundColor = .lightGray
                 footer.versionLabel.isHidden = true
             }
             return footer
@@ -117,5 +134,42 @@ extension MypageViewController: UICollectionViewDataSource {
 }
 
 extension MypageViewController: UICollectionViewDelegate {
-    // TODO: 화면 전환
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 0:
+            let nextVC: UIViewController = {
+                switch indexPath.row {
+                    // 닉네임 수정
+                case 0:
+                    let VC = NickNameViewController()
+                    VC.onlyNickname = true
+                    return VC
+                    // 프로필 사진 수정
+                case 1:
+                    return NickNameViewController()
+                    // 나의 학교 정보 수정
+                default:
+                    return SelectUniversityViewController()
+                }
+            }()
+            navigationController?.pushViewController(nextVC, animated: true)
+        case 1:
+            // TODO: 문의하기
+            if let url = URL(string: "https://www.naver.com") {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        default:
+            switch indexPath.row {
+                // 환경설정
+            case 0: let nextVC = SettingsViewController()
+                nextVC.sheetPresentationController?.detents = [.medium()]
+                present(nextVC, animated: true)
+            default:
+                // TODO: 만든 사람들
+                if let url = URL(string: "https://www.naver.com") {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                }
+            }
+        }
+    }
 }
