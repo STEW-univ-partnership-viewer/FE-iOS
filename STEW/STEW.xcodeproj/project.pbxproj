@@ -17,7 +17,6 @@
 		093D8DEE2C63313C000E8781 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 093D8DED2C63313C000E8781 /* GoogleService-Info.plist */; };
 		095D0CF82C4FFFDD00886B20 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095D0CF62C4FFFDD00886B20 /* SettingsViewController.swift */; };
 		095D0CF92C4FFFDD00886B20 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095D0CF72C4FFFDD00886B20 /* SettingsViewController.xib */; };
-		0969506B2C3E57420005450C /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0969506A2C3E57420005450C /* Config.xcconfig */; };
 		0976DEAE2C41353B00BC3B90 /* ListViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976DEAC2C41353B00BC3B90 /* ListViewCollectionViewCell.swift */; };
 		0976DEAF2C41353B00BC3B90 /* ListViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */; };
 		0976DEB32C41543900BC3B90 /* tabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976DEB12C41543900BC3B90 /* tabBarCollectionViewCell.swift */; };
@@ -62,6 +61,8 @@
 		09EC34B52C26B3C500020FF8 /* STEWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34B42C26B3C500020FF8 /* STEWTests.swift */; };
 		09EC34BF2C26B3C500020FF8 /* STEWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34BE2C26B3C500020FF8 /* STEWUITests.swift */; };
 		09EC34C12C26B3C500020FF8 /* STEWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34C02C26B3C500020FF8 /* STEWUITestsLaunchTests.swift */; };
+		09F139142C641D2F00575926 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 09F139122C641D2F00575926 /* Config.xcconfig */; };
+		09F139152C641D2F00575926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F139132C641D2F00575926 /* GoogleService-Info.plist */; };
 		33A53BB3AEE6F487E3A373CF /* Pods_STEW_STEWUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71205B7991665BD2B0514329 /* Pods_STEW_STEWUITests.framework */; };
 		C027F403BDCD768DBAA40496 /* Pods_STEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A790BBB1C4C46763A9EC7013 /* Pods_STEW.framework */; };
 		F14215B8EFD8702946F01D7F /* Pods_STEWTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BBB05057C4E03D5B4AD1B1 /* Pods_STEWTests.framework */; };
@@ -94,7 +95,6 @@
 		093D8DED2C63313C000E8781 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		095D0CF62C4FFFDD00886B20 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		095D0CF72C4FFFDD00886B20 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
-		0969506A2C3E57420005450C /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../../STEWProject/Config.xcconfig; sourceTree = "<group>"; };
 		0976DEAC2C41353B00BC3B90 /* ListViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewCollectionViewCell.xib; sourceTree = "<group>"; };
 		0976DEB12C41543900BC3B90 /* tabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -143,6 +143,8 @@
 		09EC34BA2C26B3C500020FF8 /* STEWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STEWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EC34BE2C26B3C500020FF8 /* STEWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEWUITests.swift; sourceTree = "<group>"; };
 		09EC34C02C26B3C500020FF8 /* STEWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEWUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		09F139122C641D2F00575926 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../../Config.xcconfig; sourceTree = "<group>"; };
+		09F139132C641D2F00575926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6B6554D294A4AD51FBDE3285 /* Pods-STEW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEW.debug.xcconfig"; path = "Target Support Files/Pods-STEW/Pods-STEW.debug.xcconfig"; sourceTree = "<group>"; };
 		6D82E019DD5593FF3DAC996D /* Pods-STEW-STEWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEW-STEWUITests.debug.xcconfig"; path = "Target Support Files/Pods-STEW-STEWUITests/Pods-STEW-STEWUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		71205B7991665BD2B0514329 /* Pods_STEW_STEWUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEW_STEWUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -398,11 +400,12 @@
 			isa = PBXGroup;
 			children = (
 				093D8DED2C63313C000E8781 /* GoogleService-Info.plist */,
+				09F139122C641D2F00575926 /* Config.xcconfig */,
+				09F139132C641D2F00575926 /* GoogleService-Info.plist */,
 				09E720AE2C405EF30076FC0C /* Fonts */,
 				09EC349D2C26B3C400020FF8 /* AppDelegate.swift */,
 				09E720C12C4065C70076FC0C /* UIExtension.swift */,
 				0904458D2C43BECD00C75221 /* Data */,
-				0969506A2C3E57420005450C /* Config.xcconfig */,
 				09EC349F2C26B3C400020FF8 /* SceneDelegate.swift */,
 				09EC34A12C26B3C400020FF8 /* MainViewController.swift */,
 				09E720A82C404DF90076FC0C /* SignUp */,
@@ -578,7 +581,6 @@
 				093D8DEE2C63313C000E8781 /* GoogleService-Info.plist in Resources */,
 				09E720BF2C405F890076FC0C /* Pretendard-Light.otf in Resources */,
 				09E720BA2C405F890076FC0C /* Pretendard-Thin.otf in Resources */,
-				0969506B2C3E57420005450C /* Config.xcconfig in Resources */,
 				09E720BB2C405F890076FC0C /* Pretendard-Black.otf in Resources */,
 				09E720BC2C405F890076FC0C /* Pretendard-SemiBold.otf in Resources */,
 				09C3F4E12C4D21F800C2E3A3 /* MypageCollectionViewCell.xib in Resources */,
@@ -586,7 +588,9 @@
 				09E7209F2C404DD20076FC0C /* SelectCollegeViewController.xib in Resources */,
 				0976DEBE2C4264EC00BC3B90 /* CompanyDetailViewController.xib in Resources */,
 				09E720BE2C405F890076FC0C /* Pretendard-ExtraLight.otf in Resources */,
+				09F139152C641D2F00575926 /* GoogleService-Info.plist in Resources */,
 				09E720B92C405F890076FC0C /* Pretendard-Bold.otf in Resources */,
+				09F139142C641D2F00575926 /* Config.xcconfig in Resources */,
 				09E720972C404DA70076FC0C /* NickNameViewController.xib in Resources */,
 				09EC34AA2C26B3C500020FF8 /* LaunchScreen.storyboard in Resources */,
 				09E720BD2C405F890076FC0C /* Pretendard-Medium.otf in Resources */,
@@ -798,7 +802,7 @@
 /* Begin XCBuildConfiguration section */
 		09EC34C22C26B3C500020FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0969506A2C3E57420005450C /* Config.xcconfig */;
+			baseConfigurationReference = 09F139122C641D2F00575926 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
