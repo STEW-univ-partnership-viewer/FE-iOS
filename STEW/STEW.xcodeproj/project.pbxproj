@@ -63,6 +63,10 @@
 		09EC34C12C26B3C500020FF8 /* STEWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34C02C26B3C500020FF8 /* STEWUITestsLaunchTests.swift */; };
 		09F139142C641D2F00575926 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 09F139122C641D2F00575926 /* Config.xcconfig */; };
 		09F139152C641D2F00575926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F139132C641D2F00575926 /* GoogleService-Info.plist */; };
+		09F139172C66076300575926 /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F139162C66076300575926 /* FirebaseStorageManager.swift */; };
+		09F139192C6608F400575926 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 09F139182C6608F400575926 /* FirebaseAuth */; };
+		09F1391B2C6608F400575926 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 09F1391A2C6608F400575926 /* FirebaseFirestore */; };
+		09F1391D2C6608F400575926 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 09F1391C2C6608F400575926 /* FirebaseStorage */; };
 		33A53BB3AEE6F487E3A373CF /* Pods_STEW_STEWUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71205B7991665BD2B0514329 /* Pods_STEW_STEWUITests.framework */; };
 		C027F403BDCD768DBAA40496 /* Pods_STEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A790BBB1C4C46763A9EC7013 /* Pods_STEW.framework */; };
 		F14215B8EFD8702946F01D7F /* Pods_STEWTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BBB05057C4E03D5B4AD1B1 /* Pods_STEWTests.framework */; };
@@ -145,6 +149,7 @@
 		09EC34C02C26B3C500020FF8 /* STEWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEWUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		09F139122C641D2F00575926 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../../Config.xcconfig; sourceTree = "<group>"; };
 		09F139132C641D2F00575926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		09F139162C66076300575926 /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
 		6B6554D294A4AD51FBDE3285 /* Pods-STEW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEW.debug.xcconfig"; path = "Target Support Files/Pods-STEW/Pods-STEW.debug.xcconfig"; sourceTree = "<group>"; };
 		6D82E019DD5593FF3DAC996D /* Pods-STEW-STEWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEW-STEWUITests.debug.xcconfig"; path = "Target Support Files/Pods-STEW-STEWUITests/Pods-STEW-STEWUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		71205B7991665BD2B0514329 /* Pods_STEW_STEWUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEW_STEWUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				093D8DEC2C63312C000E8781 /* FirebaseAnalytics in Frameworks */,
+				09F1391B2C6608F400575926 /* FirebaseFirestore in Frameworks */,
+				09F139192C6608F400575926 /* FirebaseAuth in Frameworks */,
+				09F1391D2C6608F400575926 /* FirebaseStorage in Frameworks */,
 				C027F403BDCD768DBAA40496 /* Pods_STEW.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				093D8DED2C63313C000E8781 /* GoogleService-Info.plist */,
+				09F139162C66076300575926 /* FirebaseStorageManager.swift */,
 				09F139122C641D2F00575926 /* Config.xcconfig */,
 				09F139132C641D2F00575926 /* GoogleService-Info.plist */,
 				09E720AE2C405EF30076FC0C /* Fonts */,
@@ -479,6 +488,9 @@
 			name = STEW;
 			packageProductDependencies = (
 				093D8DEB2C63312C000E8781 /* FirebaseAnalytics */,
+				09F139182C6608F400575926 /* FirebaseAuth */,
+				09F1391A2C6608F400575926 /* FirebaseFirestore */,
+				09F1391C2C6608F400575926 /* FirebaseStorage */,
 			);
 			productName = STEW;
 			productReference = 09EC349A2C26B3C400020FF8 /* STEW.app */;
@@ -737,6 +749,7 @@
 				09C3F4E62C4D282600C2E3A3 /* MypageSectionFooterView.swift in Sources */,
 				09C3F4E02C4D21F800C2E3A3 /* MypageCollectionViewCell.swift in Sources */,
 				09E720A62C404DF20076FC0C /* ShowUnitResultViewController.swift in Sources */,
+				09F139172C66076300575926 /* FirebaseStorageManager.swift in Sources */,
 				09EC34A22C26B3C400020FF8 /* MainViewController.swift in Sources */,
 				09E720A22C404DDB0076FC0C /* SelectDepartmentViewController.swift in Sources */,
 				0976DEAE2C41353B00BC3B90 /* ListViewCollectionViewCell.swift in Sources */,
@@ -1113,6 +1126,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 093D8DEA2C63312C000E8781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
+		};
+		09F139182C6608F400575926 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 093D8DEA2C63312C000E8781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		09F1391A2C6608F400575926 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 093D8DEA2C63312C000E8781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		09F1391C2C6608F400575926 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 093D8DEA2C63312C000E8781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
