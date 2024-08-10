@@ -20,7 +20,6 @@
                 <outlet property="collegeButton" destination="hyE-Ow-tbN" id="MEw-JD-lNv"/>
                 <outlet property="departmentButton" destination="7CT-uK-quh" id="rqQ-JX-rvU"/>
                 <outlet property="mapView" destination="hsK-Wv-bQL" id="niZ-mo-xgg"/>
-                <outlet property="searchView" destination="Dh0-aq-zi2" id="GlM-1X-ABu"/>
                 <outlet property="universityButton" destination="kh8-1d-ScB" id="jiC-WE-P4t"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -34,43 +33,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dh0-aq-zi2" userLabel="SearchView">
-                    <rect key="frame" x="24" y="50" width="327" height="45"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제휴 업체를 검색해보세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzS-OK-Wk0">
-                            <rect key="frame" x="25" y="12.333333333333334" width="175.33333333333334" height="20.333333333333329"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="V6d-QO-yJT">
-                            <rect key="frame" x="285.66666666666669" y="13" width="21.333333333333314" height="19"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="V6d-QO-yJT" secondAttribute="height" multiplier="19:17" id="bZ5-1a-8Sh"/>
-                            </constraints>
-                        </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7s-bj-1mE">
-                            <rect key="frame" x="0.0" y="0.0" width="327" height="45"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain"/>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstItem="V6d-QO-yJT" firstAttribute="trailing" secondItem="Dh0-aq-zi2" secondAttribute="trailing" constant="-20" id="46c-Fn-Xhf"/>
-                        <constraint firstItem="e7s-bj-1mE" firstAttribute="leading" secondItem="Dh0-aq-zi2" secondAttribute="leading" id="7Wi-9P-CmT"/>
-                        <constraint firstItem="qzS-OK-Wk0" firstAttribute="centerY" secondItem="Dh0-aq-zi2" secondAttribute="centerY" id="9sh-TR-h2i"/>
-                        <constraint firstItem="e7s-bj-1mE" firstAttribute="top" secondItem="Dh0-aq-zi2" secondAttribute="top" id="FWa-mL-69B"/>
-                        <constraint firstAttribute="trailing" secondItem="e7s-bj-1mE" secondAttribute="trailing" id="fIM-dk-6w9"/>
-                        <constraint firstAttribute="height" constant="45" id="hQc-uC-ogs"/>
-                        <constraint firstAttribute="bottom" secondItem="e7s-bj-1mE" secondAttribute="bottom" id="hVu-Cl-WO7"/>
-                        <constraint firstItem="V6d-QO-yJT" firstAttribute="top" secondItem="Dh0-aq-zi2" secondAttribute="top" constant="13" id="lcB-n3-yBQ"/>
-                        <constraint firstItem="qzS-OK-Wk0" firstAttribute="leading" secondItem="Dh0-aq-zi2" secondAttribute="leading" constant="25" id="sTU-Oq-bCd"/>
-                        <constraint firstItem="V6d-QO-yJT" firstAttribute="centerY" secondItem="Dh0-aq-zi2" secondAttribute="centerY" id="ugd-2g-LYo"/>
-                    </constraints>
-                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ldp-Gh-D3L">
-                    <rect key="frame" x="24" y="115" width="327" height="35"/>
+                    <rect key="frame" x="24" y="65" width="327" height="35"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kh8-1d-ScB">
                             <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="35"/>
@@ -118,13 +82,10 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Dh0-aq-zi2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="CDV-Y1-F7b"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ldp-Gh-D3L" secondAttribute="trailing" constant="24" id="GOF-ai-5BC"/>
-                <constraint firstItem="Dh0-aq-zi2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NFM-Xe-YpT"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dh0-aq-zi2" secondAttribute="trailing" constant="24" id="Rk8-Mg-fYh"/>
                 <constraint firstAttribute="bottom" secondItem="hsK-Wv-bQL" secondAttribute="bottom" id="YPA-re-wPd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hsK-Wv-bQL" secondAttribute="trailing" id="duU-S7-IDK"/>
-                <constraint firstItem="Ldp-Gh-D3L" firstAttribute="top" secondItem="Dh0-aq-zi2" secondAttribute="bottom" constant="20" id="kl6-nm-7tt"/>
+                <constraint firstItem="Ldp-Gh-D3L" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="gT4-hN-jsk"/>
                 <constraint firstItem="Ldp-Gh-D3L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="lo4-JQ-fR5"/>
                 <constraint firstItem="hsK-Wv-bQL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ra3-5S-934"/>
                 <constraint firstItem="hsK-Wv-bQL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vBn-Y7-25j"/>
@@ -133,7 +94,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Search" width="19" height="19"/>
         <namedColor name="DarkGrayColor">
             <color red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

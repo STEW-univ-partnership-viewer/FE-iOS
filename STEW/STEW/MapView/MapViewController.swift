@@ -14,11 +14,9 @@ class MapViewController: UIViewController {
     @IBOutlet weak var universityButton: UIButton!
     @IBOutlet weak var collegeButton: UIButton!
     @IBOutlet weak var departmentButton: UIButton!
-    @IBOutlet weak var searchView: UIView!
     private var selectedIndex: Int = 0
     private let locationOverlayIcon = NMFOverlayImage(image: .checkmark)
     private var markerArray: [NMFMarker] = []
-    private var infoWindowArray: [NMFInfoWindow] = []
     private var university,college,department: Unit?
     private var wholeBenefits,universityBenefits,collegeBenefits,departmentBenefits: [Location: String]?
     
@@ -42,6 +40,7 @@ class MapViewController: UIViewController {
         wholeBenefits?.merge(departmentBenefits ?? [:]) { (_, new) in new }
     }
     private func setMapUI(){
+        mapView.mapView.touchDelegate = self
         mapView.mapView.mapType = UserDefaults.standard.bool(forKey: "darkModeState") ? .navi : .basic
         mapView.mapView.setLayerGroup("NMF_LAYER_GROUP_BUILDING", isEnabled: false)
         mapView.mapView.isNightModeEnabled = UserDefaults.standard.bool(forKey: "isNightModeEnabled")
@@ -53,16 +52,6 @@ class MapViewController: UIViewController {
         
     }
     private func uiSet(){
-        searchView.layer.cornerRadius = searchView.bounds.height / 2
-        let innerView = UIView()
-        searchView.addSubview(innerView)
-        searchView.layer.shadowColor = UIColor.black.cgColor
-        searchView.layer.shadowOffset = .zero
-        searchView.layer.shadowRadius = 10
-        searchView.layer.shadowOpacity = 0.1
-        innerView.layer.cornerRadius = 15
-        innerView.clipsToBounds = true
-        
         buttonStackView.arrangedSubviews.forEach { button in
             button.layer.cornerRadius = 10
         }
@@ -103,6 +92,7 @@ class MapViewController: UIViewController {
         }
     }
     @IBAction func universityButtonTapped(_ sender: UIButton) {
+        self.dismiss(animated: true)
         selectedIndex = 0
         universityButton.backgroundColor = .mainPurple
         collegeButton.backgroundColor = .darkGray
@@ -110,6 +100,7 @@ class MapViewController: UIViewController {
         loadMarkerData()
     }
     @IBAction func collegeButtonTapped(_ sender: UIButton) {
+        self.dismiss(animated: true)
         selectedIndex = 1
         universityButton.backgroundColor = .darkGray
         collegeButton.backgroundColor = .mainPurple
@@ -117,6 +108,7 @@ class MapViewController: UIViewController {
         loadMarkerData()
     }
     @IBAction func departmentButtonTapped(_ sender: UIButton) {
+        self.dismiss(animated: true)
         selectedIndex = 2
         universityButton.backgroundColor = .darkGray
         collegeButton.backgroundColor = .darkGray
@@ -126,7 +118,7 @@ class MapViewController: UIViewController {
     
 }
 
-extension MapViewController {
+extension MapViewController:NMFMapViewTouchDelegate {
     func makeMarker(locationData: Location, benefit: String){
         let marker = NMFMarker()
         marker.position = NMGLatLng(lat: locationData.latitude, lng: locationData.longitude)
@@ -137,34 +129,23 @@ extension MapViewController {
         marker.width = 40
         marker.height = 40
         marker.iconPerspectiveEnabled = true
-        let infoWindow = NMFInfoWindow()
-        let dataSource = NMFInfoWindowDefaultTextSource.data()
-        dataSource.title = benefit
-        infoWindow.dataSource = dataSource
         // 마커를 탭하면:
         let handler = { (overlay: NMFOverlay) -> Bool in
-            
-            if let marker = overlay as? NMFMarker {
-                if marker.infoWindow == nil {
-                    // 현재 마커에 정보 창이 열려있지 않을 경우 엶
-                    infoWindow.open(with: marker)
-                    for i in self.infoWindowArray{
-                        if infoWindow != i {
-                            i.close()
-                        }
-                    }
-                } else {
-                    // 이미 현재 마커에 정보 창이 열려있을 경우 닫음
-                    infoWindow.close()
-                }
-            }
-            
+            self.dismiss(animated: true)
+            let VC = MapInfoViewController()
+            VC.location = locationData
+            VC.modalPresentationStyle = .pageSheet
+            VC.sheetPresentationController?.detents = [.custom(identifier: .init("customDetent"), resolver: { context in
+                return 200
+            }), .large()]
+            VC.sheetPresentationController?.largestUndimmedDetentIdentifier = .large
+            VC.sheetPresentationController?.prefersGrabberVisible = true
+            VC.preferredContentSize = CGSize(width: self.mapView.bounds.width, height: 189)
+            self.present(VC, animated: true)
             return true
         };
-        infoWindow.open(with: marker)
         marker.touchHandler = handler
         marker.mapView = mapView.mapView
-        infoWindowArray.append(infoWindow)
         markerArray.append(marker)
     }
     func moveCamera(locationData: Location){
@@ -173,10 +154,7 @@ extension MapViewController {
         mapView.mapView.moveCamera(cameraUpdate)
     }
     func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint) {
-        for infoWindow in infoWindowArray{
-            infoWindow.close()
-        }
+        self.dismiss(animated: true)
     }
-    
     
 }

@@ -11,9 +11,12 @@
 		093CCF482C26D69600B8E627 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093CCF462C26D69600B8E627 /* MapViewController.xib */; };
 		093CCF4C2C26D6C900B8E627 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093CCF4A2C26D6C900B8E627 /* ListViewController.swift */; };
 		093CCF4D2C26D6C900B8E627 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093CCF4B2C26D6C900B8E627 /* ListViewController.xib */; };
+		093D8DE82C63309C000E8781 /* MapInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093D8DE62C63309C000E8781 /* MapInfoViewController.xib */; };
+		093D8DE92C63309C000E8781 /* MapInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D8DE72C63309C000E8781 /* MapInfoViewController.swift */; };
+		093D8DEC2C63312C000E8781 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 093D8DEB2C63312C000E8781 /* FirebaseAnalytics */; };
+		093D8DEE2C63313C000E8781 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 093D8DED2C63313C000E8781 /* GoogleService-Info.plist */; };
 		095D0CF82C4FFFDD00886B20 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095D0CF62C4FFFDD00886B20 /* SettingsViewController.swift */; };
 		095D0CF92C4FFFDD00886B20 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095D0CF72C4FFFDD00886B20 /* SettingsViewController.xib */; };
-		0969506B2C3E57420005450C /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0969506A2C3E57420005450C /* Config.xcconfig */; };
 		0976DEAE2C41353B00BC3B90 /* ListViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976DEAC2C41353B00BC3B90 /* ListViewCollectionViewCell.swift */; };
 		0976DEAF2C41353B00BC3B90 /* ListViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */; };
 		0976DEB32C41543900BC3B90 /* tabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976DEB12C41543900BC3B90 /* tabBarCollectionViewCell.swift */; };
@@ -58,6 +61,12 @@
 		09EC34B52C26B3C500020FF8 /* STEWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34B42C26B3C500020FF8 /* STEWTests.swift */; };
 		09EC34BF2C26B3C500020FF8 /* STEWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34BE2C26B3C500020FF8 /* STEWUITests.swift */; };
 		09EC34C12C26B3C500020FF8 /* STEWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC34C02C26B3C500020FF8 /* STEWUITestsLaunchTests.swift */; };
+		09F139142C641D2F00575926 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 09F139122C641D2F00575926 /* Config.xcconfig */; };
+		09F139152C641D2F00575926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F139132C641D2F00575926 /* GoogleService-Info.plist */; };
+		09F139172C66076300575926 /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F139162C66076300575926 /* FirebaseStorageManager.swift */; };
+		09F139192C6608F400575926 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 09F139182C6608F400575926 /* FirebaseAuth */; };
+		09F1391B2C6608F400575926 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 09F1391A2C6608F400575926 /* FirebaseFirestore */; };
+		09F1391D2C6608F400575926 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 09F1391C2C6608F400575926 /* FirebaseStorage */; };
 		33A53BB3AEE6F487E3A373CF /* Pods_STEW_STEWUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71205B7991665BD2B0514329 /* Pods_STEW_STEWUITests.framework */; };
 		C027F403BDCD768DBAA40496 /* Pods_STEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A790BBB1C4C46763A9EC7013 /* Pods_STEW.framework */; };
 		F14215B8EFD8702946F01D7F /* Pods_STEWTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BBB05057C4E03D5B4AD1B1 /* Pods_STEWTests.framework */; };
@@ -85,9 +94,11 @@
 		093CCF462C26D69600B8E627 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		093CCF4A2C26D6C900B8E627 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		093CCF4B2C26D6C900B8E627 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		093D8DE62C63309C000E8781 /* MapInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapInfoViewController.xib; sourceTree = "<group>"; };
+		093D8DE72C63309C000E8781 /* MapInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapInfoViewController.swift; sourceTree = "<group>"; };
+		093D8DED2C63313C000E8781 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		095D0CF62C4FFFDD00886B20 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		095D0CF72C4FFFDD00886B20 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
-		0969506A2C3E57420005450C /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../../STEWProject/Config.xcconfig; sourceTree = "<group>"; };
 		0976DEAC2C41353B00BC3B90 /* ListViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		0976DEAD2C41353B00BC3B90 /* ListViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewCollectionViewCell.xib; sourceTree = "<group>"; };
 		0976DEB12C41543900BC3B90 /* tabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -136,6 +147,9 @@
 		09EC34BA2C26B3C500020FF8 /* STEWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STEWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EC34BE2C26B3C500020FF8 /* STEWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEWUITests.swift; sourceTree = "<group>"; };
 		09EC34C02C26B3C500020FF8 /* STEWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEWUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		09F139122C641D2F00575926 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../../Config.xcconfig; sourceTree = "<group>"; };
+		09F139132C641D2F00575926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		09F139162C66076300575926 /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
 		6B6554D294A4AD51FBDE3285 /* Pods-STEW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEW.debug.xcconfig"; path = "Target Support Files/Pods-STEW/Pods-STEW.debug.xcconfig"; sourceTree = "<group>"; };
 		6D82E019DD5593FF3DAC996D /* Pods-STEW-STEWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEW-STEWUITests.debug.xcconfig"; path = "Target Support Files/Pods-STEW-STEWUITests/Pods-STEW-STEWUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		71205B7991665BD2B0514329 /* Pods_STEW_STEWUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEW_STEWUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +166,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093D8DEC2C63312C000E8781 /* FirebaseAnalytics in Frameworks */,
+				09F1391B2C6608F400575926 /* FirebaseFirestore in Frameworks */,
+				09F139192C6608F400575926 /* FirebaseAuth in Frameworks */,
+				09F1391D2C6608F400575926 /* FirebaseStorage in Frameworks */,
 				C027F403BDCD768DBAA40496 /* Pods_STEW.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +205,7 @@
 		093CCF492C26D6B000B8E627 /* MapView */ = {
 			isa = PBXGroup;
 			children = (
+				093D8DE52C63308E000E8781 /* MapInfoView */,
 				093CCF452C26D69600B8E627 /* MapViewController.swift */,
 				093CCF462C26D69600B8E627 /* MapViewController.xib */,
 			);
@@ -216,6 +235,15 @@
 				09C3F4E92C4D286200C2E3A3 /* MypageSectionFooterView */,
 			);
 			path = MypageView;
+			sourceTree = "<group>";
+		};
+		093D8DE52C63308E000E8781 /* MapInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				093D8DE72C63309C000E8781 /* MapInfoViewController.swift */,
+				093D8DE62C63309C000E8781 /* MapInfoViewController.xib */,
+			);
+			path = MapInfoView;
 			sourceTree = "<group>";
 		};
 		095D0CFA2C4FFFE200886B20 /* SettingsView */ = {
@@ -379,11 +407,14 @@
 		09EC349C2C26B3C400020FF8 /* STEW */ = {
 			isa = PBXGroup;
 			children = (
+				093D8DED2C63313C000E8781 /* GoogleService-Info.plist */,
+				09F139162C66076300575926 /* FirebaseStorageManager.swift */,
+				09F139122C641D2F00575926 /* Config.xcconfig */,
+				09F139132C641D2F00575926 /* GoogleService-Info.plist */,
 				09E720AE2C405EF30076FC0C /* Fonts */,
 				09EC349D2C26B3C400020FF8 /* AppDelegate.swift */,
 				09E720C12C4065C70076FC0C /* UIExtension.swift */,
 				0904458D2C43BECD00C75221 /* Data */,
-				0969506A2C3E57420005450C /* Config.xcconfig */,
 				09EC349F2C26B3C400020FF8 /* SceneDelegate.swift */,
 				09EC34A12C26B3C400020FF8 /* MainViewController.swift */,
 				09E720A82C404DF90076FC0C /* SignUp */,
@@ -455,6 +486,12 @@
 			dependencies = (
 			);
 			name = STEW;
+			packageProductDependencies = (
+				093D8DEB2C63312C000E8781 /* FirebaseAnalytics */,
+				09F139182C6608F400575926 /* FirebaseAuth */,
+				09F1391A2C6608F400575926 /* FirebaseFirestore */,
+				09F1391C2C6608F400575926 /* FirebaseStorage */,
+			);
 			productName = STEW;
 			productReference = 09EC349A2C26B3C400020FF8 /* STEW.app */;
 			productType = "com.apple.product-type.application";
@@ -530,6 +567,9 @@
 				Base,
 			);
 			mainGroup = 09EC34912C26B3C400020FF8;
+			packageReferences = (
+				093D8DEA2C63312C000E8781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 09EC349B2C26B3C400020FF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -549,9 +589,10 @@
 				09C3F4DC2C4D1DF800C2E3A3 /* MypageSectionHeaderView.xib in Resources */,
 				09E720A32C404DDB0076FC0C /* SelectDepartmentViewController.xib in Resources */,
 				09E720C02C405F890076FC0C /* Pretendard-ExtraBold.otf in Resources */,
+				093D8DE82C63309C000E8781 /* MapInfoViewController.xib in Resources */,
+				093D8DEE2C63313C000E8781 /* GoogleService-Info.plist in Resources */,
 				09E720BF2C405F890076FC0C /* Pretendard-Light.otf in Resources */,
 				09E720BA2C405F890076FC0C /* Pretendard-Thin.otf in Resources */,
-				0969506B2C3E57420005450C /* Config.xcconfig in Resources */,
 				09E720BB2C405F890076FC0C /* Pretendard-Black.otf in Resources */,
 				09E720BC2C405F890076FC0C /* Pretendard-SemiBold.otf in Resources */,
 				09C3F4E12C4D21F800C2E3A3 /* MypageCollectionViewCell.xib in Resources */,
@@ -559,7 +600,9 @@
 				09E7209F2C404DD20076FC0C /* SelectCollegeViewController.xib in Resources */,
 				0976DEBE2C4264EC00BC3B90 /* CompanyDetailViewController.xib in Resources */,
 				09E720BE2C405F890076FC0C /* Pretendard-ExtraLight.otf in Resources */,
+				09F139152C641D2F00575926 /* GoogleService-Info.plist in Resources */,
 				09E720B92C405F890076FC0C /* Pretendard-Bold.otf in Resources */,
+				09F139142C641D2F00575926 /* Config.xcconfig in Resources */,
 				09E720972C404DA70076FC0C /* NickNameViewController.xib in Resources */,
 				09EC34AA2C26B3C500020FF8 /* LaunchScreen.storyboard in Resources */,
 				09E720BD2C405F890076FC0C /* Pretendard-Medium.otf in Resources */,
@@ -706,6 +749,7 @@
 				09C3F4E62C4D282600C2E3A3 /* MypageSectionFooterView.swift in Sources */,
 				09C3F4E02C4D21F800C2E3A3 /* MypageCollectionViewCell.swift in Sources */,
 				09E720A62C404DF20076FC0C /* ShowUnitResultViewController.swift in Sources */,
+				09F139172C66076300575926 /* FirebaseStorageManager.swift in Sources */,
 				09EC34A22C26B3C400020FF8 /* MainViewController.swift in Sources */,
 				09E720A22C404DDB0076FC0C /* SelectDepartmentViewController.swift in Sources */,
 				0976DEAE2C41353B00BC3B90 /* ListViewCollectionViewCell.swift in Sources */,
@@ -721,6 +765,7 @@
 				093CCF472C26D69600B8E627 /* MapViewController.swift in Sources */,
 				09E7209A2C404DC60076FC0C /* SelectUniversityViewController.swift in Sources */,
 				09E720912C4044CF0076FC0C /* UnitData.swift in Sources */,
+				093D8DE92C63309C000E8781 /* MapInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,7 +815,7 @@
 /* Begin XCBuildConfiguration section */
 		09EC34C22C26B3C500020FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0969506A2C3E57420005450C /* Config.xcconfig */;
+			baseConfigurationReference = 09F139122C641D2F00575926 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -1064,6 +1109,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		093D8DEA2C63312C000E8781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		093D8DEB2C63312C000E8781 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 093D8DEA2C63312C000E8781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		09F139182C6608F400575926 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 093D8DEA2C63312C000E8781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		09F1391A2C6608F400575926 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 093D8DEA2C63312C000E8781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		09F1391C2C6608F400575926 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 093D8DEA2C63312C000E8781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09EC34922C26B3C400020FF8 /* Project object */;
 }

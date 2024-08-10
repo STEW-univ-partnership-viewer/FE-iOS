@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Bold.otf">
+            <string>Pretendard-Bold</string>
+        </array>
+        <array key="Pretendard-Medium.otf">
+            <string>Pretendard-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapInfoViewController" customModule="STEW" customModuleProvider="target">
+            <connections>
+                <outlet property="addFavoriteButton" destination="rJf-as-0AT" id="2ra-ec-WfP"/>
+                <outlet property="companyAddressLabel" destination="TtS-zj-hgd" id="8ek-wc-8Gf"/>
+                <outlet property="companyCategoryLabel" destination="ui2-p8-ESP" id="PTe-zo-6LE"/>
+                <outlet property="companyCategoryView" destination="wea-vG-AIU" id="lXg-Yy-EKk"/>
+                <outlet property="companyImageView" destination="TSe-zA-244" id="KsN-Da-xRM"/>
+                <outlet property="companyNameLabel" destination="Pvf-xH-fdg" id="9He-1l-EZF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TSe-zA-244">
+                    <rect key="frame" x="270" y="64" width="106" height="106"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="106" id="JxW-XD-7ff"/>
+                        <constraint firstAttribute="width" constant="106" id="Woh-gE-aUZ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvf-xH-fdg">
+                    <rect key="frame" x="22" y="69" width="218" height="29"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="24"/>
+                    <color key="textColor" name="MainPurple"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtS-zj-hgd">
+                    <rect key="frame" x="22" y="110" width="208" height="17"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="14"/>
+                    <color key="textColor" systemColor="systemGray2Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wea-vG-AIU">
+                    <rect key="frame" x="22" y="32" width="44" height="22"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="식당" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ui2-p8-ESP">
+                            <rect key="frame" x="0.0" y="2.6666666666666643" width="44" height="17"/>
+                            <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="14"/>
+                            <color key="textColor" name="MainPurple"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="MainLightPurple"/>
+                    <constraints>
+                        <constraint firstItem="ui2-p8-ESP" firstAttribute="leading" secondItem="wea-vG-AIU" secondAttribute="leading" id="40r-Xw-wss"/>
+                        <constraint firstAttribute="width" constant="44" id="7gq-pg-eCr"/>
+                        <constraint firstItem="ui2-p8-ESP" firstAttribute="centerX" secondItem="wea-vG-AIU" secondAttribute="centerX" id="QTi-8b-K1Z"/>
+                        <constraint firstAttribute="trailing" secondItem="ui2-p8-ESP" secondAttribute="trailing" id="SDV-Ws-oBR"/>
+                        <constraint firstItem="ui2-p8-ESP" firstAttribute="centerY" secondItem="wea-vG-AIU" secondAttribute="centerY" id="ZM9-Tv-5Db"/>
+                        <constraint firstAttribute="height" constant="22" id="dVh-PS-A1I"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJf-as-0AT">
+                    <rect key="frame" x="22" y="146" width="111" height="29"/>
+                    <color key="backgroundColor" name="MainPurple"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="N9h-xs-NS2"/>
+                        <constraint firstAttribute="width" constant="111" id="giH-z4-KDc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="10"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addFavoriteButtonTapped:" destination="-1" eventType="touchUpInside" id="bp0-Ti-v8d"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Pvf-xH-fdg" firstAttribute="leading" secondItem="wea-vG-AIU" secondAttribute="leading" id="56k-h8-jid"/>
+                <constraint firstItem="rJf-as-0AT" firstAttribute="top" secondItem="TtS-zj-hgd" secondAttribute="bottom" constant="19" id="5ny-Cv-nVs"/>
+                <constraint firstItem="wea-vG-AIU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="CIy-Bj-lYs"/>
+                <constraint firstItem="TSe-zA-244" firstAttribute="leading" secondItem="TtS-zj-hgd" secondAttribute="trailing" constant="40" id="Flg-UX-IS3"/>
+                <constraint firstItem="TtS-zj-hgd" firstAttribute="top" secondItem="Pvf-xH-fdg" secondAttribute="bottom" constant="12" id="MFl-BR-jgs"/>
+                <constraint firstItem="TtS-zj-hgd" firstAttribute="leading" secondItem="Pvf-xH-fdg" secondAttribute="leading" id="Urh-f7-2Zx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TSe-zA-244" secondAttribute="trailing" constant="17" id="ZNt-H9-jow"/>
+                <constraint firstItem="Pvf-xH-fdg" firstAttribute="top" secondItem="wea-vG-AIU" secondAttribute="bottom" constant="15" id="bEB-kH-aAi"/>
+                <constraint firstItem="TSe-zA-244" firstAttribute="leading" secondItem="Pvf-xH-fdg" secondAttribute="trailing" constant="30" id="bgG-mL-vdN"/>
+                <constraint firstItem="wea-vG-AIU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="eGG-mC-nEc"/>
+                <constraint firstItem="TSe-zA-244" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="k26-gQ-vWU"/>
+                <constraint firstItem="rJf-as-0AT" firstAttribute="leading" secondItem="TtS-zj-hgd" secondAttribute="leading" id="rRb-Qa-DyZ"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="MainLightPurple">
+            <color red="0.9137254901960784" green="0.85882352941176465" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainPurple">
+            <color red="0.43137254901960786" green="0.16470588235294117" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
